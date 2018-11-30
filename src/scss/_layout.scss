@@ -1,0 +1,148 @@
+.layout__row{
+	margin-top: 2.4rem;
+	margin-bottom: 2.4rem;
+	@include mediaMobile{
+		&.container{
+			padding: 0
+		}
+	}
+	@include mediaDesktop{
+		margin-top: 4.8rem;
+		margin-bottom: 4.8rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: stretch;
+		&--reverse{
+			flex-direction: row-reverse;
+		}
+	}
+}
+.layout__col{
+    position: relative;
+    // strong{
+    //     font-family: 'Bitter', serif;
+    //     font-weight: bold;
+    //     font-size: 1.4rem;
+    //     margin: 2rem 0 1rem;
+    // }
+	@include mediaTablet{
+		padding: 0 4.5rem;
+	}
+	@include mediaDesktop{
+		&.anim{
+			transition-delay: 0.2s;
+			transform: translate(1.5rem, 0);
+		}
+		.layout__row--reverse &.anim{
+			transform: translate(-1.5rem, 0);
+		}
+		.layout__row--reverse &.anim.animated{
+				transform: translate(0, 0);
+		}
+	}
+	&--img{
+		position: relative;
+		text-align: center;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		background-blend-mode: multiply;
+		background-color: rgba(0,0,0,0.15);
+		height: 27rem;
+		@include mediaTablet{
+			height: 36rem;
+		}
+		@include mediaDesktop{
+			height: auto;
+			width: 70%;
+		}
+	}
+	&--text{
+		@include mediaMobile{
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		@include mediaDesktop{
+			padding-top: 4.8rem;
+			width: 30%;
+			.layout__row &{
+				padding-right: 0;
+			}
+			.layout__row--reverse &{
+				padding-left: 0;
+			}
+		}
+	}
+}
+.layout__body{
+	text-align: left;
+	font-size: 1.4rem;
+	position: relative;
+	margin-top: -10rem;
+	background-color: #fff;
+	padding: 2.2rem;
+	i{
+		color: #305f40;
+		font-size: 130%;
+	}
+	p{
+		margin: 0 0 2.4rem;
+		&:nth-child(1){
+			margin-top: 0;
+		}
+		&:nth-last-child(1){
+			margin-bottom: 0;
+		}
+	}
+	a{
+		color: #305f40;
+		&:hover,
+		&:focus,
+		&:active{
+			color: #305f40;
+		}
+	}
+	@include mediaDesktop{
+		padding: 4.8rem;
+		padding-bottom: 9.6rem;
+		margin-top: 0;
+		.title__secondary, p, div{
+			@include transition(all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+			text-align: left;
+			.anim &{
+				opacity: 0;
+			}
+			.anim.animated &{
+				opacity: 1;
+			}
+		}
+		.title__secondary{
+			transition-delay: 0.3s;
+		}
+		p, div{
+			transition-delay: 0.4s;
+		}
+		.layout__row &{
+			margin-left: -21rem;
+		}
+		.layout__row--reverse &{
+			margin-left: auto;
+			margin-right: -21rem;
+		}
+	}
+	@include mediaDesktopLarge{
+		.layout__row &{
+			margin-left: -24.5rem;
+		}
+		.layout__row--reverse &{
+			margin-left: auto;
+			margin-right: -24.5rem;
+		}
+	}
+}

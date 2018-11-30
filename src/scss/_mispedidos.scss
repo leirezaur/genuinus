@@ -1,0 +1,123 @@
+.mispedidos{
+	position: relative;
+	padding: 12rem 0 4.4rem;
+	@include mediaMobile{
+		.container{
+			padding: 0;
+		}
+	}
+	@include mediaTablet{
+		padding: 14rem 0 4.8rem;
+	}
+	&__header {
+		width: 100%;
+		margin-bottom: 4.4rem;
+		@include mediaMobile{
+			padding: 0 1.5rem;
+		}
+		@include mediaTablet{
+			width: 80%;
+			margin: 0 auto 4.8rem;
+		}
+    }
+	&__title.title{
+		text-align: center;
+		margin-bottom: 4.4rem;
+		@include mediaTablet{
+			margin-bottom: 2.4rem;
+		}
+	}
+	&__current{
+		position: relative;
+		&__info{
+
+		}
+		&__images{
+			margin: 2.2rem 0;
+			text-align: center;
+		}
+		&__image{
+			display: none;
+			width: 12rem;
+			&.current{
+				display: inline-block;
+				margin: 0 auto;
+			}
+			@include mediaTablet{
+				width: 15rem;
+			}
+			@include mediaDesktop{
+				display: inline-block;
+			    width: 17%;
+			    vertical-align: middle;
+			    margin: 0 2%;
+				&.current{
+    				width: 30%;
+				}
+			}
+		}
+		&__progressbar.progressbar{
+			margin-top: 2.2rem;
+			text-align: center;
+			span{
+				color: #000;
+			}
+			@include mediaMobile{
+				span{
+					display: none;
+				}
+			}
+			@include mediaDesktop{
+				max-width: 48rem;
+				margin: 0 auto;
+			}
+			color: transparent;
+		}
+	}
+	&__list{
+		&__footer{
+			margin-top: 4.4rem;
+			text-align: center;
+		}
+	}
+	&__tabla{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		@include mediaDesktop{
+			max-width: 64rem;
+			margin: 0 auto;
+		}
+		&__row{
+			font-family: 'Bitter';
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-items: stretch;
+			color: #000;
+			height: 4.4rem;
+			line-height: 4.4rem;
+			margin-bottom: 0.3rem;
+			&:nth-child(even){
+				background-color: #e2e2e2;
+			}
+			&:nth-child(odd){
+				background-color: #f2f2f2;
+			}
+			&--header:nth-child(1){
+				font-family: 'Open Sans';
+				background-color: transparent;
+			    border-bottom: 1px solid #7FB069;
+			    margin-bottom: 1.1rem;
+			}
+			& a{
+				text-decoration: underline;
+			}
+		}
+		&__col{
+			width: 33%;
+			text-align: center;
+		}
+	}
+}

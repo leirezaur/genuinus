@@ -1,0 +1,196 @@
+.header{
+    height: 6rem;
+	font-family: "Bitter", serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	background-color: #305E40;
+	color: #fff;
+	@include mediaMobile{
+		text-align: center;
+		height: 10rem;
+	}
+	&__logo{
+		vertical-align: top;
+	    margin: 1.5rem 0;
+		height: 3rem;
+		width: 16.5rem;
+		position: relative;
+		@include mediaTablet{
+			float: left;
+		    margin: 1.3rem 0;
+		}
+		img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			@include transition(all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s);
+		}
+	}
+	&__hamburger{
+		position: absolute;
+		left: 1.5rem;
+		@include mediaTablet{
+			display: none;
+		}
+	}
+	&__search{
+		position: relative;
+		@include mediaTablet{
+			width: 20rem;
+		    float: left;
+		    margin: 1.2rem 0 1.5rem 4.8rem;
+		}
+		@include mediaDesktop{
+		    width: 24rem;
+		}
+		@include mediaDesktopLarge{
+			margin-left: 7.2rem;
+			width: 26rem;
+		}
+	}
+	&__cart{
+		position: absolute;
+		right: 1.5rem;
+		top: 1.5rem;
+		&__link{
+			width: 40px;
+		    height: 30px;
+			position: relative;
+		}
+		&__icon{
+			fill: #fff;
+		    height: 100%;
+		}
+		&__amount{
+			background-color: #FFA800;
+		    border-radius: 50%;
+		    display: inline-block;
+		    width: 2rem;
+			height: 2rem;
+		    color: #fff;
+			font-size: 1.2rem;
+			text-align: center;
+			line-height: 2rem;
+			position: absolute;
+			top: -0.5rem;
+			left: 2rem;
+		}
+		&__price{
+			display: none;
+			color: #fff;
+		}
+		&__wrapper{
+			display: none;
+			position: fixed;
+            border: 1px;
+    		border-style: solid;
+    		border-color: #305E40;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 9999;
+			background-color: #fff;
+			text-align: left;
+		}
+		&__cta{
+			text-align: center;
+			margin-top: 2.2rem;
+		}
+        &__total{
+            margin-top: 2.2rem;
+            padding-right: 5.5rem;
+            text-align: right;
+            color: black;
+            @include mediaTablet{
+                padding-right: 4rem;
+            }
+        }
+        &__info{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.04);
+        }
+		@include mediaTablet{
+			right: 0;
+			&__wrapper{
+				position: absolute;
+			    top: 4.4rem;
+			    right: 0;
+			    left: auto;
+			    bottom: auto;
+			    width: 30rem;
+                height: 35rem;
+			    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+			}
+			&__cta{
+				text-align: center;
+				margin-top: 2.2rem;
+			}
+            &__info{
+                padding-bottom: 2.2rem;
+            }
+		}
+		@include mediaDesktop{
+			&__link{
+				width: 9rem;
+			}
+			&__price{
+				display: block;
+			    position: absolute;
+			    top: -0.6rem;
+			    left: 5rem;
+			    font-size: 1.1rem;
+			}
+		}
+	}
+	&__categories{
+		position: absolute;
+	    top: 6rem;
+	    left: 0;
+	    width: 100%;
+		background-color: #7FB069;
+		height: 4.8rem;
+		&__trigger{
+			line-height: 4.8rem;
+			color: #fff;
+			&:hover,
+			&:focus{
+				color: #fff;
+			}
+		}
+		@include mediaMobile{
+			display: none;
+		}
+		@media screen and (min-width: 768px) and (max-width: 992px){
+			.navigation__categories{
+				display: none;
+				width: 20rem;
+			    background-color: #7FB069;
+			    border-top: 0.1px solid #fff;
+				@include translate(-1.5rem, 0);
+				li{
+					display: block;
+				    padding: 0 1rem;
+				}
+			}
+		}
+		@include mediaDesktop{
+			height: 3.6rem;
+			&__trigger{
+				display: none;
+			}
+			.navigation__categories{
+				display: block !important;
+			}
+		}
+	}
+}

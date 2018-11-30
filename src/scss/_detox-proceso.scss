@@ -1,0 +1,73 @@
+.detox-proceso{
+	padding: 0 0 4rem;
+	@include mediaMobile{
+		img{
+			margin-bottom: 2.2rem;
+			margin-top: 2.2rem;
+		}
+	}
+	@include mediaDesktop{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__paso{
+		position:relative;
+		@include mediaTablet{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 3rem;
+		}
+		@include mediaDesktop{
+			width: 48%;
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 6rem;
+		}
+	}
+	&__images{
+		@include mediaTablet{
+			width: 48%;
+		}
+		@include mediaDesktop{
+			width: 100%;
+			margin-bottom: 2.4rem;
+			height: 19rem;
+		}
+	}
+	&__draw{
+		width: 80%;
+		margin-left: 15%;
+		padding-left: 1.5rem;
+		@include mediaTablet{
+			width: 80%;
+			height: auto;
+			margin-left: 15%;
+		}
+		@include mediaDesktop{
+			width: 60%;
+		}
+	}
+	&__number{
+		width: 15%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include mediaTablet{
+			width: 8%;
+		}
+		@include mediaDesktop{
+			width: 15%;
+		}
+	}
+	&__description{
+		padding: 0;
+		@include mediaTablet{
+			width: 48%;
+		}
+		@include mediaDesktop{
+			width: 100%;
+		}
+	}
+}

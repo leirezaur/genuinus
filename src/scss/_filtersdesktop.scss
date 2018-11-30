@@ -1,0 +1,75 @@
+.filtersdesktop{
+    display: none;
+    @include mediaDesktop{
+        display: block;
+    }
+	@include mediaTablet{
+		&--reverse{
+			display: flex;
+			flex-direction: row-reverse;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+	}
+	@include mediaDesktop{
+		margin-top: 3.6rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		&--reverse{
+			flex-direction: row-reverse;
+		}
+	}
+	&__search{
+		@include mediaTablet{
+			width: 50%;
+		    margin: 0 auto;
+		}
+		@include mediaDesktop{
+			order: 2;
+			max-width: 40rem;
+			margin: 0 2.4rem;
+		}
+	}
+	&__filters{
+		display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    margin: 2.2rem 0;
+		position: relative;
+		font-size: 1.4rem;
+		@include mediaTablet{
+			width: 50%;
+		    margin: 0;
+		    float: right;
+		    margin-top: 2.4rem;
+			.filters--reverse &{
+				float: none;
+			}
+		}
+		@include mediaDesktop{
+			order: 3;
+			margin-top: 0;
+			max-width: 35rem;
+		}
+	}
+	&__results{
+		padding: 2.2rem 0;
+		font-size: 1.2rem;
+		text-align: center;
+		@include mediaTablet{
+			padding: 2.4rem 0;
+			padding-bottom: 0;
+			margin-top: 2.4rem;
+			text-align: left;
+		}
+		@include mediaDesktop{
+			order: 1;
+			padding: 0;
+			margin: 0;
+		    align-self: flex-end;
+            margin-top: 1.2rem;
+		}
+	}
+}

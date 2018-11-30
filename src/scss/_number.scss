@@ -1,0 +1,99 @@
+.number{
+	position: relative;
+    height: 3.4rem;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0;
+	input[type=number]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-outer-spin-button
+	{
+		-webkit-appearance: none;
+		margin: 0;
+	}
+	input[type=number]
+	{
+		-moz-appearance: textfield;
+	}
+	input {
+		width: 3rem;
+	    height: 3rem;
+	    font-size: 1.6rem;
+	    line-height: 1.65;
+	    padding: 0;
+	    margin: 0;
+	    text-align: center;
+	    border: 1px solid #f2f2f2;
+	    float: left;
+	    margin: 0 0.5rem;
+		&:focus {
+			outline: 0;
+		}
+	}
+	&__button {
+		position: relative;
+	    cursor: pointer;
+	    width: 3rem;
+	    height: 3rem;
+	    text-align: center;
+	    color: #333;
+	    font-size: 2rem;
+	    float: left;
+	    line-height: 2.2rem;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    -o-user-select: none;
+	    user-select: none;
+	    color: #7FB069;
+	    border: 1px solid #7FB069;
+		border-radius: 50%;
+		&:before{
+			content: '';
+			width: 50%;
+			height: 2px;
+			background-color: #7FB069;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include translate(-50%, -50%);
+		}
+		&--up{
+			&:after{
+				content: '';
+				height: 50%;
+				width: 2px;
+				background-color: #7FB069;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				@include translate(-50%, -50%);
+			}
+		}
+		&--delete{
+			width: 2.4rem;
+		    height: 2.4rem;
+		    margin-top: 0.6rem;
+			@include rotate(45deg);
+			margin-left: 2.2rem;
+			border: 1px solid #ff543b;
+			@include mediaTablet{
+				margin-left: 1.2rem;
+			}
+			&:after{
+				content: '';
+				height: 50%;
+				width: 2px;
+				background-color: #7FB069;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				@include translate(-50%, -50%);
+			}
+			&:before,
+			&:after{
+
+				background-color: #ff543b;
+			}
+		}
+	}
+}

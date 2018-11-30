@@ -1,0 +1,88 @@
+.button{
+	font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+	line-height: 3.3rem;
+    height: 3.3rem;
+	padding: 0 2.2rem 0 2.2rem;
+    display: inline-block;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+	&:hover,
+	&:active,
+	&:hover,
+	&:focus{
+		color: #fff;
+	}
+	&__telephone{
+		font-size: 2.2rem;
+		color: #305f40;
+		font-weight: bold;
+	}
+	&--box{
+		min-width: 0;
+	}
+	&--primary{
+		background-color: #ffA800;
+	}
+	&--secondary{
+		background-color: #5B85AA;
+	}
+	&--icon{
+		width: 4.4rem;
+		height: 4.4rem;
+	    line-height: 4.4rem;
+	    border-radius: 50%;
+	    text-align: center;
+	    padding: 0;
+		vertical-align: middle;
+		svg{
+			width: 2.2rem;
+			height: 2.2rem;
+			fill: #fff;
+			vertical-align: middle;
+		}
+		@include mediaTablet{
+			width: 3.6rem;
+			height: 3.6rem;
+			line-height: 3.6rem;
+			&.button{
+				padding: 0;
+			}
+			svg{
+				width: 1.8rem;
+			    height: 1.8rem;
+			    fill: #fff;
+			}
+		}
+	}
+	&--nomargin.button{
+		margin: 0;
+	}
+	&.error{
+		background-color: #FF543B;
+	}
+	@include mediaMobile{
+		margin-bottom: 2rem;
+		&:nth-last-child(1){
+			margin-bottom: 0;
+		}
+	}
+	@include mediaTablet{
+		line-height: 3.6rem;
+		height: 3.6rem;
+		padding: 0 2.4rem 0 2.4rem;
+		margin-right: 0;
+		&:nth-last-child(1){
+			margin-right: 0;
+		}
+		&__telephone{
+			display: inline-block;
+		}
+	}
+}

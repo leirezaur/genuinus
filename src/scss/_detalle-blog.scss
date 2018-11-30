@@ -1,0 +1,96 @@
+.blog{
+    &__detail{
+        &__title{
+            font-family: 'Bitter';
+			font-size: 2.4rem;
+            line-height: 1.4;
+            @include mediaDesktop{
+                font-size: 3.2rem;
+                font-weight: bolder;
+            }
+        }
+        &__detail{
+            @include mediaTablet{
+                padding: 0 0.5rem;
+            }
+            @include mediaDesktop{
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    &__break{
+        margin: 2rem 0 1rem;
+        border: 1px solid #f2f2f2;
+    }
+    &__news{
+        &__title{
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin: 4rem 0 2rem;
+        }
+        &__time{
+            margin: 0 0 2rem;
+        }
+    }
+    &__list{
+        padding-left: 3rem;
+        margin-top: 0;
+        &--2{
+            padding-left: 2.5rem;
+            list-style-type: decimal;
+        }
+    }
+    &__chart{
+		margin: 1rem 0;
+        text-align: center;
+		@include mediaTablet{
+			margin: 3rem 0 0;
+			float: right;
+		}
+		@include mediaDesktop{
+			margin: 3.4rem 0 0;
+		}
+    }
+    &__share{
+		margin: 3rem 0 3rem;
+        @include mediaTablet{
+			margin: 1rem 0 3rem;
+			width: 50%;
+			display: inline-block;
+        }
+    }
+    &__navigation{
+        margin: 1rem 0 3rem;
+        display: flex;
+        flex-direction: row;
+        &__prev, &__next{
+            color: #FFA800;
+            text-decoration: underline;
+            font-style: italic;
+            width: 50%;
+        }
+        &__next{
+            text-align: right;
+        }
+    }
+    &__related{
+        display: flex;
+        flex-direction: column;
+        @include mediaTablet{
+            flex-direction: row;
+        }
+    }
+    &__post--others{
+		margin-bottom: 2.2rem;
+        @include mediaTablet{
+            width: 33%;
+        }
+    }
+    &__image--other{
+        margin: 1rem 0;
+        @include mediaTablet{
+            width: 100%;
+            padding: 0 0.5rem;
+        }
+    }
+}

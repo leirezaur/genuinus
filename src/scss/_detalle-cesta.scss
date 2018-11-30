@@ -1,0 +1,317 @@
+.detalle-cesta{
+	position: relative;
+	padding: 12.8rem 0 4.4rem;
+	@include mediaTablet{
+		padding: 15rem 0 4.8rem;
+	}
+    &__header {
+        background-color: white;
+		&__img{
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		&__info{
+			position: relative;
+		}
+		@include mediaTablet{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			&__img,
+			&__info{
+				width: 50%;
+			}
+			&__img{
+			    padding: 0 4.8rem;
+			}
+		}
+    }
+    &__name{
+		font-weight: bold;
+	    font-size: 2.6rem;
+	    line-height: 3.6rem;
+	    margin: 0;
+	    margin-right: 7rem;
+		@include mediaTablet{
+			font-size: 2.6rem;
+		}
+    }
+    &__precio{
+		font-size: 1.6rem;
+	    line-height: 3.6rem;
+	    font-family: 'Bitter', serif;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+		@include mediaTablet{
+			font-size: 2rem;
+		}
+    }
+    &__personas{
+		padding: 1.1rem 0 2.2rem;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: flex-start;
+        img{
+            width: 22px;
+            height: 22px;
+            margin-right: 6px;
+        }
+		@include mediaTablet{
+			padding: 1.2em 0;
+			margin-bottom: 2.4rem;
+			img{
+				width: 2.4rem;
+				height: 2.4rem;
+				margin-right: 7px;
+			}
+		}
+    }
+	&__llamanos{
+		padding-top: 1.1rem;
+	    border-top: 1px solid #9B9B9B;
+	    height: 8rem;
+	    text-align: right;
+		.number{
+			margin-right: 2.2rem;
+		}
+		@include mediaMobile{
+			padding-top: 1.2rem;
+			margin-right: 2.4rem;
+		}
+		@include mediaTablet{
+			font-size: 1.6rem;
+		}
+	}
+	&__share{
+		margin-top: 4.4rem;
+		position: relative;
+		span{
+			display: inline-block;
+		}
+		&__hidden{
+			display: none;
+			position: absolute;
+		    left: 5.5rem;
+		    bottom: 0;
+			.button{
+				opacity: 0;
+				visibility: hidden;
+				@include translate(0, -1rem);
+				@include transition(all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+				box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+			}
+			.button.active{
+				opacity: 1;
+				visibility: visible;
+				@include translate(0, 0);
+			}
+			@include mediaTablet{
+				left: 6rem;
+			}
+		}
+	}
+	&__social{
+		display: inline-block;
+	}
+    &__desc{
+        font-size: 16px;
+    }
+    &__content{
+        display: flex;
+        flex: auto;
+        &__prod{
+            margin: 0 5px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+            text-align: center;
+			img{
+				height: 2.2rem;
+				width: 2.2rem;
+			}
+            p{
+                font-size: 14px;
+                font-family: 'Bitter', serif;
+            }
+        }
+    }
+	&__accordion{
+		margin: 4.4rem 0;
+		@include mediaTablet{
+			margin: 4.8rem 0;
+			margin-top: 0;
+		}
+		&__item{
+			background-color: #f2f2f2;
+			border-bottom: 1px solid #fff;
+		}
+		&__header{
+			padding: 2.2rem;
+			font-family: 'Bitter', serif;
+			font-weight: bold;
+			position: relative;
+			@include mediaTablet{
+				padding: 2.4rem 4.8rem;
+			}
+			@include mediaDesktop{
+				padding: 2.4rem;
+			}
+		}
+		&__toggle{
+			position: absolute;
+		    right: 0;
+		    top: 0;
+		    padding: 2rem;
+			i{
+				font-size: 2.2rem;
+				line-height: 2.2rem;
+				@include transition(all 0.3s ease-out);
+				@include rotate(0deg);
+				.active &{
+					@include rotate(180deg);
+				}
+				@include mediaTablet{
+					line-height: 2.4rem;
+				}
+			}
+			@include mediaDesktop{
+				display: none;
+			}
+		}
+		&__body{
+			font-size: 1.4rem;
+			display: none;
+			@include mediaDesktop{
+				display: block;
+			}
+		}
+		&__text{
+			padding: 2.2rem;
+			padding-top: 0;
+			@include mediaTablet{
+				padding: 0 4.8rem 2.4rem;
+			}
+			@include mediaDesktop{
+				padding: 0 2.4rem 2.4rem;
+			}
+		}
+		&__ingredients{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			padding-bottom: 2.2rem;
+			@include mediaTablet{
+				padding-bottom: 2.4rem;
+			}
+		}
+		&__ingredient{
+			padding: 1.1rem 2.2rem;
+		    padding-right: 6.6rem;
+		    position: relative;
+			img{
+				vertical-align: middle;
+			    height: 2.2rem;
+			    width: 2.2rem;
+			    margin-right: 1.1rem;
+			}
+			span{
+				position: absolute;
+				right: 2.2rem;
+			}
+			@include mediaTablet{
+				padding: 1.2rem 4.8rem;
+			}
+            @include mediaDesktop{
+                padding: 1.2rem 2.4rem;
+            }
+		}
+		&__detalle{
+			margin-bottom: 2.2rem;
+			@include mediaTablet{
+				margin-bottom: 2.4rem;
+			}
+		}
+		&__list{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			p{
+				padding: 0 2.2rem 1.1rem;
+				color: #305F40;
+				font-weight: bold;
+			}
+			@include mediaTablet{
+				p{
+					padding: 0 4.8rem 1.2rem;
+				}
+			}
+            @include mediaDesktop{
+                p{
+                    padding: 0 2.4rem 1.2rem;
+                }
+            }
+		}
+		&__listitem{
+			padding: 1.1rem 2.2rem;
+		    position: relative;
+			&--ud{
+				padding-right: 8.8rem;
+			}
+			@include mediaTablet{
+				padding-left: 4.8rem;
+				&--ud{
+					padding-right: 9.6rem;
+				}
+			}
+            @include mediaDesktop{
+                padding-left: 2.4rem;
+            }
+			&:before{
+				content: '·';
+			    font-size: 2.6rem;
+			    line-height: 2.2rem;
+			    vertical-align: middle;
+				@include mediaTablet{
+					line-height: 2.4rem;
+
+				}
+			}
+			&:nth-child(even){
+				background-color: rgba(206, 210, 219, 0.2);
+			}
+			span{
+				position: absolute;
+				right: 2.2rem;
+				@include mediaTablet{
+					right: 2.4rem;
+				}
+			}
+		}
+	}
+	@include mediaDesktop{
+		&__flexlg{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			flex-wrap: nowrap;
+			&__side{
+				width: 50%;
+				background-color: #f2f2f2;
+				&:nth-child(2){
+					border-left: 2px solid #fff;
+				}
+				&:nth-child(1){
+					.detalle-cesta__accordion__item:nth-child(1){
+						border-bottom: 2px solid #fff;
+					}
+					.detalle-cesta__accordion__item:nth-child(2){
+						border-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}

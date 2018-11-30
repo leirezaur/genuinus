@@ -1,0 +1,25 @@
+.form{
+	&__input{
+		font-family: 'Open Sans';
+	}
+	&__select{
+		border-radius: 0.5rem;
+		background-color: #F2F2F2;
+		width: 100%;
+		height: 3.5rem;
+		display: block;
+		font-size: 1.4rem;
+		padding: 0.5rem 1rem;
+		outline: none;
+		border: 0.1rem solid transparent;
+		font-family: 'Open Sans';
+		&:focus{
+			border: 0.1rem solid rgba(48, 95, 64, 0.5);
+			outline: 0px transparent;
+		}
+	}
+	&__hr{
+		border: 0.5px solid rgba(127, 176, 105, 0.8);
+		margin: 2rem 0 0.5rem;
+	}
+}

@@ -1,0 +1,103 @@
+.crossup {
+	padding-bottom: 4.4rem;
+	@include mediaTablet{
+		padding-bottom: 4.8rem;
+	}
+	&:focus,
+	&:hover,
+	&:active{
+		outline: none;
+	}
+	&__title{
+		padding: 0 1.1rem;
+	    font-size: 2rem;
+	    line-height: 1;
+	    margin: 2.2rem 0 1.1rem;
+		@include mediaTablet{
+			padding: 0 4.8rem;
+			line-height: 2.2rem;
+			margin: 2.4rem 0 1.2rem;
+		}
+		@include mediaDesktop{
+			line-height: 2.4rem;
+			&--center{
+				text-align: center;
+			}
+		}
+		.crossup--nomargin &{
+			padding: 0 1.1rem;
+			@include mediaTablet{
+				padding: 0 1.5rem;
+			}
+		}
+	}
+	&__product{
+		width: 100%;
+	    padding: 0 0.6rem;
+		margin-top: 1.2rem;
+		margin-bottom: 1.1rem;
+		@include mediaTablet{
+			width: 33%;
+		    padding: 0 0.7rem;
+		}
+		@include mediaDesktop{
+			width: 25%;
+		}
+		@include mediaDesktopLarge{
+			width: 20%;
+		}
+	}
+	&__wrapper{
+		@include mediaTablet{
+			padding: 0 3.6rem;
+		}
+		.crossup--nomargin &{
+			padding: 0;
+		}
+	}
+	@include mediaMobile{
+		.flickity-prev-next-button{
+			display: none;
+		}
+	}
+	@include mediaTablet{
+		.crossup--nomargin &{
+			.container{
+				padding: 0;
+			}
+		}
+		padding-bottom: 4.8rem;
+		.flickity-prev-next-button{
+			&,
+			&:hover {
+				background-color: transparent;
+			}
+			.crossup--nomargin &{
+				&.next{
+					right: -2rem;
+				}
+				&.previous{
+					left: -2rem;
+				}
+			}
+			&.next{
+				right: 0;
+			}
+			&.previous{
+				left: 0;
+			}
+		}
+	}
+	@include mediaDesktop{
+		padding-bottom: 7.2rem;
+		.flickity-page-dots {
+		    margin-top: 2.4rem;
+		}
+		.flickity-prev-next-button{
+			opacity: 0.6;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

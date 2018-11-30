@@ -1,0 +1,47 @@
+.checkoutcart-item{
+    background-color: #FAFAFB;
+    margin-bottom: 0.5rem;
+    &__content{
+		display: flex;
+	    align-items: center;
+	    justify-content: flex-start;
+    }
+    &__imagen{
+		width: 10rem;
+		padding: 1.1rem;
+    }
+    &__info{
+		margin-left: 1.1rem;
+	    width: 100%;
+        @include mediaTablet{
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__title{
+        font-size: 1.4rem;
+		line-height: 2.2rem;
+        margin: 1.1rem 0;
+        @include mediaTablet{
+            width: 100%;
+        }
+    }
+	&__number.number{
+		margin-top: 1.1rem;
+		margin-bottom: 1.1rem;
+		width: 100%;
+		@include mediaTablet{
+			width: 80rem;
+		}
+	}
+	&__price,
+	&__subtotal{
+		width: 100%;
+		padding: 1.1rem;
+		@include mediaTablet{
+			padding: 1.2rem;
+		}
+	}
+}

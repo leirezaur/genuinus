@@ -1,0 +1,22 @@
+.cestas{
+	padding: 0rem 0rem 4rem;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 100%;
+        margin-bottom: 2.2rem
+    }
+    @media only screen and (min-width: 768px){
+        &__container{
+            flex-direction: row;
+        }
+        &__item{
+            width: 49%;
+        }
+    }
+}

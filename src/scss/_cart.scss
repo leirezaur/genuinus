@@ -1,0 +1,79 @@
+.cart{
+	position: relative;
+    overflow-y: scroll;
+    margin: 0;
+    height: 100%;
+    padding: 4rem 2rem;
+    padding-left: 0;
+    padding-right: 4rem;
+    padding-bottom: 18rem;
+    list-style: none;
+    color: #000;
+    font-size: 1.2rem;
+    right: -2rem;
+	@include mediaMobile{
+		margin-top: 6rem;
+	}
+	@include mediaTablet{
+		height: 25rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	&__row{
+	    padding: 0.5rem 0;
+		display: flex;
+	    flex-direction: row;
+	    align-items: stretch;
+		justify-content: flex-start;
+		&--last{
+			flex-direction: row-reverse;
+			margin-top: 2.2rem;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	}
+	&__col{
+		margin-right: 0.8rem;
+		&:nth-last-child(1){
+			margin-right: 0;
+		}
+		&__content{
+			display: flex;
+			flex-direction: column;
+		}
+		&--imagen{
+    		width: 10rem;
+			img{
+				vertical-align: top;
+				width: 100%;
+			}
+		}
+		&--nombre{
+			font-weight: 800;
+			width: 20rem;
+		}
+		&--uds{
+			width: 4rem;
+			text-align: center;
+		}
+		&--precio{
+			width: 10rem;
+			text-align: right;
+		}
+	}
+	&__empty{
+		display: block;
+	    text-align: center;
+	    font-size: 2rem;
+	    color: #305E40;
+	    font-family: 'Bitter', serif;
+	    padding-top: 8rem;
+	}
+	&__underline{
+		border-bottom: 1px;
+		border-bottom-style: solid;
+		border-color: #f2f2f2;
+		display: block;
+	}
+}

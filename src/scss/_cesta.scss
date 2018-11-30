@@ -1,0 +1,136 @@
+.cesta{
+    position: relative;
+    &__header {
+        text-align: center;
+        background-color: white;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__info{
+        padding-top: 3rem;
+        position: relative;
+    }
+    &__name{
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 36px;
+        margin: 0;
+    }
+    &__precio{
+        font-size: 18px;
+        line-height: 36px;
+        font-family: Bitter;
+        position: absolute;
+        right: 0;
+        top: 3.2rem;
+    }
+    &__personas{
+        padding: 2.2rem 0;
+        display: flex;
+        flex: auto;
+        img{
+            width: 22px;
+            height: 22px;
+            margin-right: 6px;
+        }
+    }
+    &__desc{
+        font-size: 16px;
+    }
+    &__content{
+        display: flex;
+        flex: auto;
+        &__prod{
+            margin: 0 5px;
+            text-align: center;
+            img{
+                width: 22px;
+                height: 22px;
+            }
+            p{
+                font-size: 14px;
+                font-family: Bitter;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .cesta{
+        padding: 2rem;
+        background-color: rgba(242, 242, 242, 0.5);
+        &__name{
+            padding-right: 65px;
+        }
+        &__content{
+            margin: 2rem 0;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .cesta{
+        background-color: rgba(242, 242, 242, 0.5);
+        padding: 2rem;
+        height: 100%;
+        padding-bottom: 14.6rem;
+        &__header, &__info{
+            width: 100%;
+        }
+        &__header{
+            background-color: white;
+            img{
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        &__desc{
+            padding-bottom: 1rem;
+        }
+        &__button{
+            position: absolute;
+            right: 2.2rem;
+            bottom: 2.2rem;
+        }
+        &__content{
+            position: absolute;
+            left: 2.2rem;
+            bottom: 8.4rem;
+        }
+        &__name{
+            font-size: 3.2rem;
+            line-height: 5rem;
+        }
+        &__precio{
+            font-size: 2.4rem;
+            line-height: 5rem;
+            position: relative;
+            top: 0;
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+    .cesta{
+        width: 100%;
+        padding-bottom: 8.4rem;
+        &__precio{
+            line-height: 5rem;
+            position: absolute;
+            right: 0;
+            top: 3.8rem;
+        }
+        &__content{
+            margin-bottom: 0;
+        }
+        &__content{
+            position: absolute;
+            left: 2.2rem;
+            bottom: 2.2rem;
+        }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .cesta{
+        padding-bottom: 9.6rem;
+    }
+}

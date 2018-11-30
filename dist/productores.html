@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Productores | Alimentos ecológicos y saludables de proximidad on-line · Genuinus</title>
+    <meta name="lang" content="ES">
+    <meta content="text/html;charset=UTF-8" http-equiv="content-type" />
+    <meta name="author" content="Cheveres">
+    <meta name="description" content="Genuinus - Alimentación ecológica y saludable de proximidad.">
+
+    <meta name="geo.region" content="ES-CT" />
+    <meta name="geo.placename" content="Barcelona" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <link href="images/	favicon.ico" rel="shortcut icon" type="image/ico" />
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<!-- COOKIES -->
+<div id="cookies" class="cookies">
+    <div id="cookies-close" class="cookies__close">
+        <i class="fa fa-times-circle" aria-hidden="true"></i>
+    </div>
+    <p class="cookies__title">
+        <strong>Política de cookies</strong>
+    </p>
+    <p>
+        Utilizamos cookies propias y de terceros para mejorar tu experiencia al navegar nuestro sitio.
+		Al seguir navegando, consideramos que aceptas su uso. Puedes obtener más información en nuestra página
+		<a class="cookies__link" href=""> política de cookies</a>.
+    </p>
+    <p>
+        <a id="cookies-btn" class="cookies__button button button--primary" href="politica-cookies.html">Aceptar</a>
+    </p>
+</div>
+<!-- COOKIES -->
+
+<!-- HEADER -->
+<header class="header">
+	<div class="container">
+		<div id="nav-toggle" class="hamburger header__hamburger">
+			<div class="hamburger-box">
+				<div class="hamburger-inner"></div>
+			</div>
+		</div>
+		<a class="header__logo" href="index.html">
+			<img src="images/logowhite.png" alt="Genuinus">
+		</a>
+		<div class="header__search">
+			<div class="search">
+				<div class="search__wrapper">
+					<input id="smartSearch" class="js-search search__input" type="text" name="smartSearch" value="" placeholder="Buscar">
+					<label for="smartSearch" class="search__icon">
+						<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+						<path d="M39.3,36.6c3-3.6,4.8-8.2,4.8-13.2c0-11.4-9.3-20.7-20.7-20.7S2.7,12,2.7,23.4S12,44.1,23.4,44.1c5,0,9.6-1.8,13.2-4.8
+						L54,56.7c0.4,0.4,0.8,0.6,1.3,0.6s1-0.2,1.3-0.6c0.7-0.7,0.7-1.9,0-2.7L39.3,36.6z M23.4,40.3c-9.3,0-16.9-7.6-16.9-16.9
+						S14.1,6.5,23.4,6.5s16.9,7.6,16.9,16.9S32.7,40.3,23.4,40.3z"/>
+					</svg>
+				</label>
+				</div>
+				<ul id="results" class="search__results"></ul>
+			</div>
+		</div>
+		<nav id="navigation" class="header__navigation navigation">
+			<div id="back-drop" class="hamburger navigation__backdrop">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+			<ul class="navigation__categories navigation__categories--mobile">
+				<li class="navigation__categories__item navigation__categories__item--border">
+		            <a class="navigation__categories__link" href="cestas.html">
+						<span>
+							Cestas
+						</span>
+		            </a>
+		        </li>
+				<li class="navigation__categories__item">
+					<a class="navigation__categories__link" href="carnes.html">
+						<span>
+							Carnes
+						</span>
+					</a>
+				</li>
+		        <li class="navigation__categories__item">
+		            <a class="navigation__categories__link" href="pescados.html">
+						<span>
+							Pescados
+						</span>
+		            </a>
+		        </li>
+		        <li class="navigation__categories__item">
+		            <a class="navigation__categories__link" href="frutayverdura.html">
+						<span>
+							Fruta & verdura
+						</span>
+		            </a>
+		        </li>
+		        <li class="navigation__categories__item">
+		            <a class="navigation__categories__link" href="lacteos.html">
+						<span>
+							Lácteos & huevos
+						</span>
+		            </a>
+		        </li>
+		        <li class="navigation__categories__item">
+		            <a class="navigation__categories__link" href="preparados.html">
+						<span>
+							Platos preparados
+						</span>
+		            </a>
+		        </li>
+		        <li class="navigation__categories__item">
+		            <a class="navigation__categories__link" href="despensa.html">
+						<span>
+							Despensa
+						</span>
+		            </a>
+		        </li>
+		        <li class="navigation__categories__item">
+		            <a class="navigation__categories__link" href="bebidas.html">
+						<span>
+							Bebidas
+						</span>
+		            </a>
+		        </li>
+			</ul>
+			<ul class="navigation__list">
+				<li class="navigation__item navigation__item--login">
+					<a class="navigation__icon" href="login.html">
+						<svg class="navigation__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+							<path d="M60,30C60,13.458,46.542,0,30,0S0,13.458,0,30c0,6.142,1.858,11.857,5.038,16.618l-0.002,0.021l0.207,0.303
+								c0.18,0.263,0.374,0.512,0.562,0.768c0.076,0.104,0.151,0.209,0.229,0.313c0.238,0.316,0.483,0.626,0.732,0.931
+								c0.072,0.088,0.145,0.175,0.218,0.262c1.157,1.385,2.427,2.653,3.793,3.794c0.083,0.069,0.165,0.139,0.249,0.208
+								c0.298,0.243,0.599,0.481,0.906,0.712c0.124,0.094,0.25,0.185,0.375,0.277c0.292,0.214,0.584,0.426,0.884,0.629
+								c0.16,0.109,0.326,0.211,0.488,0.317c0.416,0.27,0.836,0.531,1.264,0.779c0.298,0.174,0.597,0.347,0.902,0.511
+								c0.184,0.099,0.372,0.191,0.558,0.286c0.325,0.166,0.651,0.327,0.982,0.481c0.167,0.077,0.334,0.153,0.502,0.227
+								c0.383,0.17,0.771,0.331,1.162,0.485c0.121,0.048,0.241,0.097,0.363,0.144c1.073,0.406,2.175,0.754,3.302,1.036
+								c0.046,0.012,0.093,0.021,0.139,0.032c0.498,0.122,1.001,0.231,1.509,0.328c0.135,0.026,0.27,0.049,0.405,0.073
+								c0.424,0.075,0.85,0.141,1.28,0.198c0.164,0.022,0.327,0.043,0.491,0.063c0.419,0.048,0.841,0.086,1.265,0.117
+								c0.158,0.012,0.315,0.027,0.473,0.036C28.847,59.979,29.421,60,30,60s1.153-0.021,1.724-0.053c0.158-0.009,0.315-0.025,0.473-0.036
+								c0.424-0.031,0.846-0.068,1.265-0.117c0.164-0.019,0.328-0.041,0.491-0.063c0.43-0.057,0.856-0.123,1.28-0.198
+								c0.135-0.024,0.27-0.047,0.405-0.073c0.508-0.097,1.011-0.206,1.509-0.328c0.046-0.011,0.093-0.021,0.139-0.032
+								c1.127-0.282,2.229-0.63,3.302-1.036c0.122-0.046,0.243-0.096,0.365-0.144c0.391-0.154,0.778-0.315,1.161-0.484
+								c0.168-0.074,0.336-0.15,0.502-0.227c0.331-0.154,0.658-0.315,0.982-0.481c0.186-0.095,0.374-0.188,0.558-0.286
+								c0.305-0.164,0.603-0.337,0.902-0.511c0.428-0.249,0.849-0.509,1.264-0.779c0.163-0.106,0.328-0.208,0.488-0.317
+								c0.299-0.203,0.591-0.415,0.884-0.629c0.125-0.092,0.251-0.183,0.375-0.277c0.306-0.231,0.608-0.469,0.906-0.712
+								c0.084-0.069,0.166-0.139,0.249-0.208c1.367-1.142,2.636-2.409,3.794-3.795c0.073-0.087,0.145-0.173,0.216-0.261
+								c0.249-0.305,0.494-0.615,0.732-0.931c0.078-0.103,0.152-0.208,0.229-0.313c0.187-0.256,0.382-0.505,0.562-0.768l0.207-0.303
+								l-0.002-0.021C58.142,41.857,60,36.142,60,30z M58,30c0,4.972-1.309,9.642-3.591,13.694C52.697,38.02,47.458,34,41.311,34h-0.896
+								h-5.049C35.164,34,35,33.836,35,33.635V32.99c0-0.183,0.149-0.303,0.276-0.352c6.439-2.421,10.455-12.464,9.613-19.488
+								c-0.439-3.658-2.251-6.927-4.883-9.295C50.517,7.892,58,18.086,58,30z M52.538,46.59c-0.081,0.109-0.162,0.217-0.244,0.325
+								c-0.223,0.293-0.448,0.584-0.682,0.868c-0.024,0.029-0.049,0.057-0.073,0.086c-0.808,0.972-1.681,1.888-2.611,2.743
+								c-0.055,0.051-0.11,0.103-0.166,0.153c-0.277,0.251-0.561,0.495-0.848,0.735c-0.09,0.075-0.181,0.149-0.272,0.223
+								c-0.279,0.227-0.56,0.45-0.847,0.666c-0.097,0.073-0.197,0.142-0.295,0.214c-0.165,0.121-0.332,0.238-0.499,0.355V48h-2v6.233
+								c-0.039,0.023-0.078,0.045-0.118,0.068c-0.255,0.146-0.509,0.291-0.768,0.428c-0.177,0.094-0.357,0.185-0.537,0.276
+								c-0.302,0.152-0.606,0.299-0.913,0.44c-0.15,0.069-0.299,0.138-0.45,0.204c-0.385,0.168-0.774,0.328-1.166,0.479
+								c-0.081,0.031-0.16,0.065-0.241,0.095c-1,0.374-2.022,0.692-3.063,0.95c-0.075,0.019-0.151,0.034-0.226,0.052
+								c-0.431,0.103-0.866,0.197-1.303,0.279c-0.13,0.025-0.26,0.047-0.391,0.07c-0.388,0.068-0.778,0.127-1.17,0.178
+								c-0.151,0.02-0.302,0.041-0.454,0.058c-0.388,0.045-0.778,0.078-1.17,0.107c-0.145,0.01-0.289,0.025-0.435,0.033
+								C31.065,57.982,30.534,58,30,58s-1.065-0.018-1.595-0.048c-0.146-0.008-0.29-0.023-0.435-0.033c-0.391-0.029-0.782-0.062-1.17-0.107
+								c-0.152-0.017-0.303-0.038-0.454-0.058c-0.392-0.052-0.782-0.111-1.17-0.178c-0.13-0.023-0.261-0.045-0.391-0.07
+								c-0.437-0.083-0.872-0.176-1.303-0.28c-0.075-0.018-0.15-0.034-0.225-0.052c-1.041-0.259-2.064-0.576-3.064-0.95
+								c-0.081-0.03-0.161-0.064-0.241-0.095c-0.392-0.151-0.78-0.311-1.165-0.479c-0.151-0.066-0.301-0.135-0.451-0.204
+								c-0.307-0.141-0.611-0.288-0.913-0.44c-0.18-0.091-0.36-0.181-0.537-0.276c-0.259-0.137-0.514-0.283-0.768-0.428
+								c-0.039-0.023-0.079-0.045-0.118-0.068V48h-2v4.958c-0.168-0.117-0.335-0.235-0.499-0.355c-0.098-0.072-0.198-0.141-0.295-0.214
+								c-0.287-0.216-0.568-0.439-0.846-0.665c-0.092-0.074-0.183-0.149-0.274-0.224c-0.287-0.239-0.57-0.483-0.847-0.734
+								c-0.056-0.051-0.112-0.104-0.168-0.155c-0.93-0.855-1.803-1.77-2.61-2.742c-0.024-0.029-0.049-0.057-0.073-0.086
+								c-0.234-0.284-0.459-0.575-0.682-0.868c-0.082-0.108-0.164-0.216-0.244-0.325c-0.12-0.163-0.236-0.329-0.352-0.495
+								C7.893,40.313,12.804,36,18.689,36h2.896L30,44.414L38.414,36h2.896c5.885,0,10.797,4.313,11.58,10.095
+								C52.774,46.261,52.659,46.427,52.538,46.59z M25.491,30.791C20.709,29.022,17,20.85,17,15c0-0.128,0.015-0.253,0.018-0.38
+								l0.732-0.903c1.651-1.964,4.469-2.526,7.012-1.4C25.785,12.771,26.874,13,28,13c2.971,0,5.64-1.615,7.028-4.184
+								c3.182,1.045,6.022,3.015,7.943,5.498c0.293,6.1-3.294,14.533-8.398,16.452C33.617,31.126,33,31.999,33,32.99v0.645
+								C33,34.938,34.062,36,35.365,36h0.221L30,41.586L24.414,36h0.221C25.938,36,27,34.938,27,33.635V33
+								C27,32.014,26.395,31.126,25.491,30.791z M30.04,2.002c0.012,0,0.022,0,0.033,0c0.489,0.003,0.97,0.03,1.43,0.083
+								c4.959,0.553,9.127,4.005,10.752,8.589c-2.115-1.842-4.708-3.26-7.497-4.027l-0.86-0.236l-0.333,0.826C32.644,9.522,30.46,11,28,11
+								c-0.845,0-1.662-0.172-2.427-0.511c-2.766-1.224-5.786-0.893-8.017,0.73c0.613-2.026,1.72-3.882,3.261-5.42
+								C23.271,3.35,26.53,2.002,30.04,2.002z M19.982,3.86c-0.193,0.174-0.392,0.338-0.578,0.523C16.564,7.218,15,10.987,15,15
+								c0,6.629,4.19,15.593,9.797,17.666C24.916,32.711,25,32.848,25,33v0.635C25,33.836,24.836,34,24.635,34h-5.049h-0.896
+								c-6.148,0-11.387,4.02-13.099,9.694C3.309,39.642,2,34.972,2,30C2,18.09,9.477,7.9,19.982,3.86z"/>
+							<g>
+						</svg>
+					</a>
+					<a class="navigation__login" href="login.html">
+						<span>Iniciar sesión</span>
+					</a>
+					<a class="navigation__login" href="signup-long.html">
+						<span>Registrarse</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__cart">
+			<a id="cart-toggle" class="header__cart__link" href="#">
+				<svg class="header__cart__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 viewBox="0 0 486.569 486.569" style="enable-background:new 0 0 486.569 486.569;" xml:space="preserve">
+					<g>
+						<path d="M146.069,320.369h268.1c30.4,0,55.2-24.8,55.2-55.2v-112.8c0-0.1,0-0.3,0-0.4c0-0.3,0-0.5,0-0.8c0-0.2,0-0.4-0.1-0.6
+							c0-0.2-0.1-0.5-0.1-0.7s-0.1-0.4-0.1-0.6c-0.1-0.2-0.1-0.4-0.2-0.7c-0.1-0.2-0.1-0.4-0.2-0.6c-0.1-0.2-0.1-0.4-0.2-0.6
+							c-0.1-0.2-0.2-0.4-0.3-0.7c-0.1-0.2-0.2-0.4-0.3-0.5c-0.1-0.2-0.2-0.4-0.3-0.6c-0.1-0.2-0.2-0.3-0.3-0.5c-0.1-0.2-0.3-0.4-0.4-0.6
+							c-0.1-0.2-0.2-0.3-0.4-0.5c-0.1-0.2-0.3-0.3-0.4-0.5s-0.3-0.3-0.4-0.5s-0.3-0.3-0.4-0.4c-0.2-0.2-0.3-0.3-0.5-0.5
+							c-0.2-0.1-0.3-0.3-0.5-0.4c-0.2-0.1-0.4-0.3-0.6-0.4c-0.2-0.1-0.3-0.2-0.5-0.3s-0.4-0.2-0.6-0.4c-0.2-0.1-0.4-0.2-0.6-0.3
+							s-0.4-0.2-0.6-0.3s-0.4-0.2-0.6-0.3s-0.4-0.1-0.6-0.2c-0.2-0.1-0.5-0.2-0.7-0.2s-0.4-0.1-0.5-0.1c-0.3-0.1-0.5-0.1-0.8-0.1
+							c-0.1,0-0.2-0.1-0.4-0.1l-339.8-46.9v-47.4c0-0.5,0-1-0.1-1.4c0-0.1,0-0.2-0.1-0.4c0-0.3-0.1-0.6-0.1-0.9c-0.1-0.3-0.1-0.5-0.2-0.8
+							c0-0.2-0.1-0.3-0.1-0.5c-0.1-0.3-0.2-0.6-0.3-0.9c0-0.1-0.1-0.3-0.1-0.4c-0.1-0.3-0.2-0.5-0.4-0.8c-0.1-0.1-0.1-0.3-0.2-0.4
+							c-0.1-0.2-0.2-0.4-0.4-0.6c-0.1-0.2-0.2-0.3-0.3-0.5s-0.2-0.3-0.3-0.5s-0.3-0.4-0.4-0.6c-0.1-0.1-0.2-0.2-0.3-0.3
+							c-0.2-0.2-0.4-0.4-0.6-0.6c-0.1-0.1-0.2-0.2-0.3-0.3c-0.2-0.2-0.4-0.4-0.7-0.6c-0.1-0.1-0.3-0.2-0.4-0.3c-0.2-0.2-0.4-0.3-0.6-0.5
+							c-0.3-0.2-0.6-0.4-0.8-0.5c-0.1-0.1-0.2-0.1-0.3-0.2c-0.4-0.2-0.9-0.4-1.3-0.6l-73.7-31c-6.9-2.9-14.8,0.3-17.7,7.2
+							s0.3,14.8,7.2,17.7l65.4,27.6v61.2v9.7v74.4v66.5v84c0,28,21,51.2,48.1,54.7c-4.9,8.2-7.8,17.8-7.8,28c0,30.1,24.5,54.5,54.5,54.5
+							s54.5-24.5,54.5-54.5c0-10-2.7-19.5-7.5-27.5h121.4c-4.8,8.1-7.5,17.5-7.5,27.5c0,30.1,24.5,54.5,54.5,54.5s54.5-24.5,54.5-54.5
+							s-24.5-54.5-54.5-54.5h-255c-15.6,0-28.2-12.7-28.2-28.2v-36.6C126.069,317.569,135.769,320.369,146.069,320.369z M213.269,431.969
+							c0,15.2-12.4,27.5-27.5,27.5s-27.5-12.4-27.5-27.5s12.4-27.5,27.5-27.5S213.269,416.769,213.269,431.969z M428.669,431.969
+							c0,15.2-12.4,27.5-27.5,27.5s-27.5-12.4-27.5-27.5s12.4-27.5,27.5-27.5S428.669,416.769,428.669,431.969z M414.169,293.369h-268.1
+							c-15.6,0-28.2-12.7-28.2-28.2v-66.5v-74.4v-5l324.5,44.7v101.1C442.369,280.769,429.669,293.369,414.169,293.369z"/>
+					</g>
+				</svg>
+				<span class="header__cart__amount js-cart-amount">0</span>
+				<span class="header__cart__price js-cart-price"><span></span> €</span>
+			</a>
+			<div id="cart-wrapper" class="header__cart__wrapper">
+				<div id="cart-back-drop" class="hamburger navigation__backdrop">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+				<ul id="cart" class="cart">
+					<li class="cart__underline">
+						<a href="producto.html" class="cart__row">
+							<div class="cart__col cart__col--imagen">
+								<img src="images/productos/zanahoria.png" alt="Zanahoria Ecológica">
+							</div>
+                            <div class="cart__col__content">
+                                <div class="cart__col cart__col--nombre"><span>Zanahoria Ecológica</span></div>
+                                <div class="cart__col cart__col--uds"><span>Cantidad: 6</span></div>
+                                <div class="cart__col cart__col--precio"><span>0.90</span> €</div>
+                            </div>
+						</a>
+					</li>
+					<!-- <li><span class="cart__empty">Su carrito está vacío</span></li> -->
+				</ul>
+                <div class="header__cart__info">
+                    <div class="header__cart__total">TOTAL: <span></span> €</div>
+                    <div class="header__cart__cta">
+                        <a href="cart.html" class="button button--secondary">Ver Carrito</a>
+                        <a href="checkout.html" class="button button--primary">Comprar</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	<div class="header__categories">
+		<div class="container">
+			<a href="#" class="js-header-categories header__categories__trigger">Ver categorias <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+			<ul class="navigation__categories">
+				<li class="navigation__categories__item navigation__categories__item--border">
+					<a class="navigation__categories__link" href="cestas.html">
+						<span>
+							Cestas
+						</span>
+					</a>
+				</li>
+				<li class="navigation__categories__item">
+					<a class="navigation__categories__link" href="carnes.html">
+						<span>
+							Carnes
+						</span>
+					</a>
+				</li>
+				<li class="navigation__categories__item">
+					<a class="navigation__categories__link" href="pescados.html">
+						<span>
+							Pescados
+						</span>
+					</a>
+				</li>
+				<li class="navigation__categories__item">
+					<a class="navigation__categories__link" href="frutayverdura.html">
+						<span>
+							Fruta & verdura
+						</span>
+					</a>
+				</li>
+				<li class="navigation__categories__item">
+					<a class="navigation__categories__link" href="lacteos.html">
+						<span>
+							Lácteos & huevos
+						</span>
+					</a>
+				</li>
+				<li class="navigation__categories__item">
+					<a class="navigation__categories__link" href="preparados.html">
+						<span>
+							Platos preparados
+						</span>
+					</a>
+				</li>
+				<li class="navigation__categories__item">
+					<a class="navigation__categories__link" href="despensa.html">
+						<span>
+							Despensa
+						</span>
+					</a>
+				</li>
+				<li class="navigation__categories__item">
+					<a class="navigation__categories__link" href="bebidas.html">
+						<span>
+							Bebidas
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<!-- END HEADER -->
+
+<!-- PRODUCTORES -->
+<div class="producers">
+    <!-- HERO -->
+    <div class="hero">
+        <header class="hero__image producers__hero">
+    		<span class="hero__overlay"></span>
+            <div class="hero__title">
+                <h1 class="title">Productores</h1>
+            </div>
+    	</header>
+        <div class="container hero__content anim">
+            <div class="hero__wrapper">
+				<h2 class="title__secondary">
+					El alma de Genuinus
+				</h2>
+                <p>
+                    <strong>Productores</strong> que trabajan artesanalmente con <strong>conciencia, pasión</strong> y una constante <strong>preocupación por el producto</strong> y su elaboración, siempre guardando los tiempos de recogida y <strong>respetando los ciclos naturales.</strong>
+                </p>
+             </div>
+        </div>
+    </div>
+    <!-- END HERO -->
+
+	<div class="container">
+	    <div class="producers__content">
+			<div class="producers__item">
+                <a href="productor.html" class="producer-card anim">
+                    <div class="producer-card__header" style="background-image: url('images/montseny_mobile.jpg');">
+                    </div>
+                    <div class="producer-card__content">
+                        <div class="producer-card__person" style="background-image: url('images/productor.jpg');">
+                        </div>
+                        <div class="producer-card__info">
+                            <h3 class="producer-card__name">Jordi Évole</h3>
+                            <p><i>Lleida</i></p>
+                        </div>
+                        <h2 class="producer-card__title"> La formatgeria del Montseny</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+                </a>
+            </div>
+            <div class="producers__item">
+                <a href="productor.html" class="producer-card anim">
+                    <div class="producer-card__header" style="background-image: url('images/producer-hero-card-chicken.png');">
+                    </div>
+                    <div class="producer-card__content">
+                        <div class="producer-card__person" style="background-image: url('images/productor-chicken.png');">
+                        </div>
+                        <div class="producer-card__info">
+                            <h3 class="producer-card__name">Josep Puigdomènech</h3>
+                            <p><i>Girona</i></p>
+                        </div>
+                        <h2 class="producer-card__title"> La granja de Can Cisquet</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+                    </div>
+                </a>
+            </div>
+            <div class="producers__item">
+                <a href="productor.html" class="producer-card anim">
+                    <div class="producer-card__header" style="background-image: url('images/producer-hero-card-baker.png');">
+                    </div>
+                    <div class="producer-card__content">
+                        <div class="producer-card__person" style="background-image: url('images/productor-baker.png');">
+                        </div>
+                        <div class="producer-card__info">
+                            <h3 class="producer-card__name">Laia Gonzalez</h3>
+                            <p><i>Barcelona</i></p>
+                        </div>
+                        <h2 class="producer-card__title"> La forneria</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+                </a>
+            </div>
+            <div class="producers__item">
+                <a href="productor.html" class="producer-card anim">
+                    <div class="producer-card__header" style="background-image: url('images/producer-hero-card-fisher.png');">
+                    </div>
+                    <div class="producer-card__content">
+                        <div class="producer-card__person" style="background-image: url('images/productor-fish.png');">
+                        </div>
+                        <div class="producer-card__info">
+                            <h3 class="producer-card__name">Marc Mas</h3>
+                            <p><i>Begur</i></p>
+                        </div>
+                        <h2 class="producer-card__title"> La llotja de Begur</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+                </a>
+            </div>
+            <div class="producers__item">
+                <a href="productor.html" class="producer-card anim">
+                    <div class="producer-card__header" style="background-image: url('images/producer-hero-card-farmer.png');">
+                    </div>
+                    <div class="producer-card__content">
+                        <div class="producer-card__person" style="background-image: url('images/productor-farmer.png');">
+                        </div>
+                        <div class="producer-card__info">
+                            <h3 class="producer-card__name">Jaume Faus</h3>
+                            <p><i>Baix Llobregat</i></p>
+                        </div>
+                        <h2 class="producer-card__title"> L'hort d'en Jaume</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+                </a>
+            </div>
+            <div class="producers__item">
+                <a href="productor.html" class="producer-card anim">
+                    <div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+                    </div>
+                    <div class="producer-card__content">
+                        <div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+                        </div>
+                        <div class="producer-card__info">
+                            <h3 class="producer-card__name">Nombre productor</h3>
+                            <p><i>Ubicación</i></p>
+                        </div>
+                        <h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+                </a>
+            </div>
+            <div class="producers__item">
+                <a href="productor.html" class="producer-card anim">
+                    <div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+                    </div>
+                    <div class="producer-card__content">
+                        <div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+                        </div>
+                        <div class="producer-card__info">
+                            <h3 class="producer-card__name">Nombre productor</h3>
+                            <p><i>Ubicación</i></p>
+                        </div>
+                        <h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+                </a>
+            </div>
+            <div class="producers__item">
+                <a href="productor.html" class="producer-card anim">
+                    <div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+                    </div>
+                    <div class="producer-card__content">
+                        <div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+                        </div>
+                        <div class="producer-card__info">
+                            <h3 class="producer-card__name">Nombre productor</h3>
+                            <p><i>Ubicación</i></p>
+                        </div>
+                        <h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+                </a>
+            </div>
+			<div class="producers__item">
+				<a href="productor.html" class="producer-card anim">
+					<div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+					</div>
+					<div class="producer-card__content">
+						<div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+						</div>
+						<div class="producer-card__info">
+							<h3 class="producer-card__name">Nombre productor</h3>
+							<p><i>Ubicación</i></p>
+						</div>
+						<h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="producers__item">
+				<a href="productor.html" class="producer-card anim">
+					<div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+					</div>
+					<div class="producer-card__content">
+						<div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+						</div>
+						<div class="producer-card__info">
+							<h3 class="producer-card__name">Nombre productor</h3>
+							<p><i>Ubicación</i></p>
+						</div>
+						<h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="producers__item">
+				<a href="productor.html" class="producer-card anim">
+					<div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+					</div>
+					<div class="producer-card__content">
+						<div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+						</div>
+						<div class="producer-card__info">
+							<h3 class="producer-card__name">Nombre productor</h3>
+							<p><i>Ubicación</i></p>
+						</div>
+						<h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="producers__item">
+				<a href="productor.html" class="producer-card anim">
+					<div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+					</div>
+					<div class="producer-card__content">
+						<div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+						</div>
+						<div class="producer-card__info">
+							<h3 class="producer-card__name">Nombre productor</h3>
+							<p><i>Ubicación</i></p>
+						</div>
+						<h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="producers__item">
+				<a href="productor.html" class="producer-card anim">
+					<div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+					</div>
+					<div class="producer-card__content">
+						<div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+						</div>
+						<div class="producer-card__info">
+							<h3 class="producer-card__name">Nombre productor</h3>
+							<p><i>Ubicación</i></p>
+						</div>
+						<h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="producers__item">
+				<a href="productor.html" class="producer-card anim">
+					<div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+					</div>
+					<div class="producer-card__content">
+						<div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+						</div>
+						<div class="producer-card__info">
+							<h3 class="producer-card__name">Nombre productor</h3>
+							<p><i>Ubicación</i></p>
+						</div>
+						<h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="producers__item">
+				<a href="productor.html" class="producer-card anim">
+					<div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+					</div>
+					<div class="producer-card__content">
+						<div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+						</div>
+						<div class="producer-card__info">
+							<h3 class="producer-card__name">Nombre productor</h3>
+							<p><i>Ubicación</i></p>
+						</div>
+						<h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="producers__item">
+				<a href="productor.html" class="producer-card anim">
+					<div class="producer-card__header" style="background-image: url('images/producer-hero-card-placeholder.png');">
+					</div>
+					<div class="producer-card__content">
+						<div class="producer-card__person" style="background-image: url('images/producer-placeholder.png');">
+						</div>
+						<div class="producer-card__info">
+							<h3 class="producer-card__name">Nombre productor</h3>
+							<p><i>Ubicación</i></p>
+						</div>
+						<h2 class="producer-card__title"> Nombre del negocio</h2>
+						<div class="producer-card__button">
+							<span class="button button--primary">
+								<span class="form__button__text">Ver detalle</span>
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="producers__map">
+			<div id="map">
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END PRODUCTORES -->
+
+<!-- FOOTER -->
+<footer class="footer">
+	<div class="container">
+    	<div class="footer__content">
+			<div class="footer__group">
+				<div class="footer__logo">
+					<a href="">
+						<img class="footer__logo__img" src="images/logowhite.png" alt="Genuinus">
+					</a>
+				</div>
+				<div class="footer__social">
+					<p>
+						<a class="icon icon--dark" href="https://www.facebook.com/BeGenuinus/" target="_blank">
+							<i class="icon__img fa fa-facebook" aria-hidden="true"></i>
+						</a>
+						<a class="icon icon--dark" href="https://www.instagram.com/genuinus/" target="_blank">
+							<i class="icon__img fa fa-instagram" aria-hidden="true"></i>
+						</a>
+						<a class="icon icon--dark" href="https://twitter.com/genuinus?lang=ca" target="_blank">
+							<i class="icon__img fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						<a class="icon icon--dark" href="https://www.youtube.com/channel/UCnQA1gOOh01cfLqjrsMEaRA" target="_blank">
+							<i class="icon__img fa fa-youtube-play" aria-hidden="true"></i>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div itemscope itemtype="http://schema.org/LocalBusiness" class="footer__about">
+                <p>
+					<strong>Atención al cliente</strong>
+					<br>
+                    <strong>Teléfono: </strong><a itemprop="telephone" class="footer__link" href="tel:+34966123456">+34 966 12 34 56</a>
+                    <br>
+                    <strong>E-mail: </strong><a itemprop="email" class="footer__link" href="mailto:genuinus@genuinus.com">genuinus@genuinus.com</a>
+                    <br>
+                    <a class="footer__link" href="files/Productos_genuinus.pdf" target="_blank"><strong>Descarga nuestro catálogo</strong> (pdf 40kb)</a>
+                </p>
+            </div>
+            <div class="footer__nav">
+				<ul>
+					<li class="footer__nav__link"><a href="cestas.html">Cestas</a></li>
+					<li class="footer__nav__link"><a href="conocenos.html">Conócenos</a></li>
+					<li class="footer__nav__link"><a href="productores.html">Productores</a></li>
+				</ul>
+				<ul>
+					<li class="footer__nav__link"><a href="blog.html">Blog</a></li>
+					<li class="footer__nav__link"><a href="contacto.html">Contacto</a></li>
+				</ul>
+            </div>
+	    </div>
+	</div>
+	<div class="footer__footer">
+		<div class="container">
+			<div class="footer__footer__legals">
+				<a class="footer__link" href="politica-privacidad.html">Política de privacidad</a> |
+				<a class="footer__link" href="condiciones-transporte.html">Condiciones de transporte</a> |
+				<a class="footer__link" href="terminos-condiciones.html">Términos y condiciones</a> |
+				<a class="footer__link" href="politica-cookies.html">Política de cookies</a>
+			</div>
+			<span class="footer__footer__copy" href="politica-privacidad.html">Genuinus &copy; 2017. Chéveres <i class="beating fa fa-heart" aria-hidden="true"></i></span>
+		</div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/maps.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+<script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM0Wyot5PZd50px85QuwOYCwuOZTs-q9Y&callback=initMap">
+</script>
+<script>
+
+	var center = {lat: 41.400 , lng: 2.156}
+	var locations = [
+		{lat: 42.003  , lng: 2.872},
+		{lat: 41.353  , lng: 0.660},
+		{lat: 41.312  , lng: 2.059},
+		{lat: 41.9585 , lng: 3.229},
+		{lat: 41.400  , lng: 2.156},
+	];
+	var marker;
+	var bounds;
+	var infowindow;
+	var prev_infowindow = false;
+
+	function createInfoBox(title, name, link){
+
+		return '<div class="info-window">'+
+					'<h1 class="info-window__title">' + title + '</h1>'+
+		            '<p class="info-window__name">' + name + '</p></br>'+
+		            '<a href="' + link + '" class="button button--primary">Ver detalle</a>'+
+            	'</div>';
+	}
+
+	function initMap() {
+
+		var bounds = new google.maps.LatLngBounds();
+		var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 11,
+			maxZoom: 14,
+			center: center,
+			styles: mapStyles,
+			animation: google.maps.Animation.DROP
+		});
+
+		var producers = $('.producers__item');
+
+		for(i=0; i<locations.length; i++){
+
+			var contentString = createInfoBox($(producers[i]).find('.producer-card__title').html(),
+			$(producers[i]).find('.producer-card__name').html(),
+			$(producers[i]).find('.producer-card').attr('href'));
+
+			infowindow = new google.maps.InfoWindow({
+				content: contentString
+			});
+
+			marker = new google.maps.Marker({
+				position: locations[i],
+				map: map,
+				animation: google.maps.Animation.DROP,
+				title: $(producers[i]).find('.producer-card__title').html(),
+				infowindow: infowindow
+			});
+
+			google.maps.event.addListener(marker, 'click', function() {
+				if(prev_infowindow) {
+					prev_infowindow.close();
+				}
+				prev_infowindow = this.infowindow;
+		        this.infowindow.open(map, this);
+			});
+
+			bounds.extend(locations[i]);
+		}
+		map.fitBounds(bounds);
+	}
+</script>
+</body>
+</html>

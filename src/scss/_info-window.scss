@@ -1,0 +1,12 @@
+.info-window{
+	&__title{
+		color: #305f40;
+		max-width: 25rem;
+		@include mediaTablet{
+			max-width: 35rem;
+		}
+	}
+	&__name{
+		font-size: 1.8rem;
+	}
+}

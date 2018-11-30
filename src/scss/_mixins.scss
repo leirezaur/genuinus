@@ -1,0 +1,60 @@
+@mixin mediaMobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin mediaTablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mediaDesktop {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin mediaDesktopLarge {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+@mixin trs-delay($delay) {
+  -webkit-transition: $delay;
+  -moz-transition: $delay;
+  -ms-transition: $delay;
+  -o-transition: $delay;
+  transition-delay: $delay;
+}
+@mixin translate($xpos, $ypos){
+	-webkit-transform: translate($xpos, $ypos); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+	-ms-transform: translate($xpos, $ypos); /* IE 9 */
+	transform: translate($xpos, $ypos); /* IE 10, Fx 16+, Op 12.1+ */
+}
+@mixin scale($x, $y){
+	-webkit-transform: scale($x, $y); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+	-ms-transform: scale($x, $y); /* IE 9 */
+	transform: scale($x, $y); /* IE 10, Fx 16+, Op 12.1+ */
+}
+@mixin rotate($deg){
+	-webkit-transform: rotate($deg); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+	-ms-transform: rotate($deg); /* IE 9 */
+	transform: rotate($deg); /* IE 10, Fx 16+, Op 12.1+ */
+}
+@mixin gradient($fromColor, $toColor, $posFrom: 0%, $posTo: 100%, $deg: 0deg) {
+    background-color: $toColor; /* Fallback Color */
+    background: -moz-linear-gradient($deg,  $fromColor $posFrom, $toColor $posTo); /* FF3.6+ */
+    background-image: -webkit-gradient($deg, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+    background: -webkit-linear-gradient($deg,  $fromColor $posFrom,$toColor $posTo); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient($deg,  $fromColor $posFrom,$toColor $posTo); /* Opera 11.10+ */
+    background: -ms-linear-gradient($deg,  $fromColor $posFrom,$toColor $posTo); /* IE10+ */
+    background: linear-gradient($deg,  $fromColor $posFrom,$toColor $posTo); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}

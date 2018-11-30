@@ -1,0 +1,371 @@
+.mercado{
+	padding: 14rem 0 4.4rem;
+	@include mediaTablet{
+		padding: 15.8rem 0 4.8rem;
+	}
+	// &__hero{
+	// 	background-image: url('../images/mercado-hero.jpg');
+	// 	background-size: cover;
+	// 	background-position: center;
+	// 	@include mediaTablet{
+	// 		background-image: url('../images/mercado-hero.jpg');
+	// 		background-size: cover;
+	// 		background-position: center;
+	// 	}
+	// 	@include mediaMobile{
+	// 		background-position: center
+	// 	}
+	// }
+	// &__herotitle{
+	// 	text-align: center;
+	// }
+	&__container{
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		&--detox{
+			width: 100%;
+		}
+		@include mediaMobile{
+			width: 100%;
+		}
+		@include mediaTablet{
+			width: 720px;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0 1.5rem;
+		}
+		@include mediaDesktop{
+			width: 960px;
+			max-width: 100%;
+		}
+		@include mediaDesktopLarge{
+			width: 1140px;
+			max-width: 100%;
+		}
+	}
+	&__dual{
+		@include mediaMobile{
+			margin-bottom: 4.4rem;
+		}
+		@include mediaTablet{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			margin-top: 2.4rem;
+			margin-bottom: 4.8rem;
+		}
+		&__half{
+			background-position: center;
+			background-size: cover;
+			position: relative;
+			height: 26.5rem;
+			width: auto;
+			> a{
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				display: flex;
+			}
+			@include mediaTablet{
+				display: flex;
+				align-items: center;
+				width: 50%;
+				height: 36rem;
+			}
+			@include mediaDesktop{
+				height: 44rem;
+			}
+			&:before {
+				content: "";
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+				z-index: 9;
+			}
+			&--cesta{
+				@include mediaMobile{
+					background-image: url('../images/cesta-mobile.png');
+				    margin: 2.2rem 0 1.1rem;
+				}
+				@include mediaTablet{
+					background-image: url('../images/mercado-cestas-desktop.png');
+					margin-right: 1.2rem;
+				}
+			}
+			&--producto{
+				display: flex;
+				@include mediaMobile{
+					background-image: url('../images/productos-mercado-mobile.png');
+				    margin: 1.1rem 0 2.2rem;
+				}
+				@include mediaTablet{
+					background-image: url('../images/mercado-productos-desktop.png');
+					margin-left: 1.2rem;
+				}
+			}
+		}
+	}
+	&__item-content{
+		align-self: center;
+		position: relative;
+		z-index: 99;
+		text-align: center;
+		@include mediaTablet{
+			position:relative;
+			padding: 3.6rem;
+			&--detox{
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+		}
+		@include mediaDesktop{
+			&--detox{
+				justify-content: space-around;
+			}
+		}
+	}
+	&__item-title{
+		color: #fff;
+		font-size: 3.2rem;
+		margin-top: 0;
+		margin-bottom: 4.4rem;
+		font-weight: normal;
+		@include mediaTablet{
+			font-size: 3.6rem;
+		    padding-top: 4.8rem;
+		    margin-top: 0;
+		    margin-bottom: 2.4rem;
+		    font-weight: normal;
+			&--detox{
+				padding-top: 0;
+			}
+		}
+	}
+	&__item-text{
+		color: #fff;
+	    font-weight: bold;
+	    margin-bottom: 2.2rem;
+	    height: 4.8rem;
+		@include mediaTablet{
+			font-weight: bold;
+			margin-bottom: 2.4rem;
+			height: 7.2rem;
+			max-width: 40rem;
+			margin: 0 auto;
+		}
+	}
+	&__detox{
+		@include mediaMobile{
+			.container{
+				padding: 0;
+			}
+		}
+		&__info{
+			text-align: center;
+		    margin: 0 auto;
+		    width: 80%;
+		    margin-bottom: 2.2rem;
+		}
+		&__title{
+			padding: 0;
+		    margin-top: 0;
+		    margin-bottom: 2.2rem;
+		    font-family: "Bitter", serif;
+		    font-size: 2.8rem;
+		    font-weight: 400;
+		    line-height: 1.2;
+		}
+		&__text{
+			font-family: "Open Sans", sans-serif;
+			font-size: 1.4rem;
+		}
+		&__banner{
+			position: relative;
+			height: 61.6rem;
+		    background-image: url('../images/detox-mobile.jpg');
+		    background-position: center;
+		    background-size: cover;
+		    text-align: center;
+			a{
+				padding: 12.2rem 4.4rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+			@include mediaTablet{
+				background-image: url('../images/detox-tablet.jpg');
+				height: 48rem;
+				a{
+					padding: 12rem;
+				}
+			}
+			@include mediaDesktop{
+				text-align: left;
+				background-image: url('../images/detox-desktop.jpg');
+				height: 20rem;
+				a{
+					padding: 2.4rem 4.8rem;
+				}
+				span{
+					margin-left: 7.2rem;
+				}
+			}
+		}
+		&__bannertext{
+			color: #fff;
+			text-shadow: 0px 0px 20px rgb(0,0,0);
+			margin: 0 auto;
+			margin-bottom: 2.2rem;
+			font-size: 2.4rem;
+			line-height: 1.5;
+			width: 100%;
+			&:hover,
+			&:active{
+				color: #fff;
+			}
+			@include mediaTablet{
+				font-size: 3rem;
+			}
+			@include mediaDesktop{
+				font-size: 3rem;
+				width: 42rem;
+				margin-left: 0;
+				text-align: left;
+			}
+		}
+	}
+	&__offers{
+		margin-top: 2.2rem;
+		@include mediaMobile{
+			.container{
+				padding: 0;
+			}
+		}
+		&__wrapper{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			@include mediaTablet{
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: stretch;
+			}
+		}
+		&__offer{
+			background-position: center;
+		    background-size: cover;
+		    min-height: 24rem;
+		    display: block;
+		    color: #fff;
+		    margin-bottom: 2.2rem;
+		    padding: 3.3rem;
+		    padding-top: 4.4rem;
+		    text-align: left;
+			&:nth-last-child(1){
+				margin-bottom: 0;
+			}
+			&:hover,
+			&:active{
+				color: #fff;
+			}
+			&--xl{
+				display: flex;
+			    flex-direction: column;
+			    padding: 0;
+			}
+			@include mediaTablet{
+				width: calc(50% - 1.2rem);
+				padding: 4.8rem;
+				margin-bottom: 2.4rem;
+				&--xl{
+					flex-direction: row;
+					flex-wrap: nowrap;
+					justify-content: flex-start;
+					align-items: stretch;
+					width: 100%;
+					padding: 0;
+				}
+				&--double{
+					width: 100%;
+				}
+				&:nth-last-child(1){
+					margin-bottom: 0;
+				}
+			}
+			@include mediaDesktop{
+				text-align: left;
+				padding: 2.4rem;
+				width: calc(25% - 1.2rem);
+				&:nth-last-child(1),
+				&:nth-last-child(2){
+					margin-bottom: 2.4rem;
+				}
+				&--xl{
+					width: calc(75% - 0.4rem);
+					padding: 0;
+				}
+				.button{
+					display: inline-block;
+				    position: relative;
+				    left: 50%;
+				    transform: translateX(-50%);
+					@include translate(-50%, 0);
+				}
+			}
+		}
+		&__half{
+			min-height: 24rem;
+			&--img{
+				background-position: center;
+				background-size: cover;
+			}
+			&--text{
+				padding: 3.3rem;
+				padding-top: 4.4rem;
+				text-align: left;
+				background-color: #f2f2f2;
+				color: #000;
+				.mercado__offers__title{
+					color: #5B85AA;
+				}
+			}
+			@include mediaTablet{
+				width: 50%;
+			}
+		}
+		&__title{
+			font-family: "Open Sans", sans-serif;
+		    font-size: 2.4rem;
+		    line-height: 3.2rem;
+		    margin: 0;
+			margin-bottom: 1.1rem;
+			font-weight: bold;
+			@include mediaTablet{
+				font-size: 1.8rem;
+			}
+			@include mediaDesktop{
+				font-size: 2rem;
+			}
+		}
+		&__lead{
+			font-family: "Open Sans", sans-serif;
+		    font-size: 1.6rem;
+			margin-bottom: 2.2rem;
+			@include mediaDesktop{
+				height: 7.2rem;
+			}
+		}
+	}
+}

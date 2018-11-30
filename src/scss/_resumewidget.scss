@@ -1,0 +1,52 @@
+.resumewidget{
+    background-color: #FAFAFB;
+    text-align: center;
+    &__content{
+        padding: 2.2rem 4rem;
+        padding-top: 1.2rem;
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            display: flex;
+            justify-content: center;
+        }
+		@include mediaDesktop{
+			padding: 2.4rem 3.6rem;
+			padding-top: 1.2rem;
+		}
+    }
+    &__header{
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            width: 35%;
+        }
+    }
+    &__footer{
+        @media screen and (min-width: 768px) and (max-width: 992px){
+            width: 45%;
+        }
+    }
+    &__info{
+        border-bottom: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #979797;
+        padding: 1rem 0;
+        &:nth-last-child(1){
+            border-bottom: 0;
+        }
+    }
+    &__name{
+        width: 9rem;
+        text-align: left;
+    }
+    &__price{
+        float: right;
+        text-align: right;
+        font-weight: 800;
+    }
+    &__total{
+        font-family: "Open Sans", Arial, sans-serif;
+        margin: 0;
+        margin-top: 1.2rem;
+    }
+    &__button{
+        margin-top: 2.2rem;
+    }
+}

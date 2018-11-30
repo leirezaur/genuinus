@@ -1,0 +1,22 @@
+.contact{
+	padding: 0 0 4rem;
+	&__hero{
+		background-image: url('../images/contacto_mobile.jpg');
+		@include mediaTablet{
+			background-image: url('../images/contacto_desktop.jpg');
+		}
+	}
+}
+.contact__form{
+	text-align: center;
+	font-size: 1.4rem;
+	// padding: 2.4rem 0;
+	max-width: 710px;
+	margin: 0 auto;
+	@include mediaTablet{
+		width: 90%;
+	}
+	@include mediaDesktop{
+		// padding: 4.8rem 0;
+	}
+}

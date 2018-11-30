@@ -1,0 +1,109 @@
+.about{
+	&__hero{
+		background-image: url('../images/conocenos_mobile.png');
+		@include mediaTablet{
+			background-image: url('../images/conocenos.png');
+		}
+	}
+}
+.quehacemos{
+	margin-bottom: 2.2rem;
+	@include mediaMobile{
+		ul strong{
+			font-size: 1.8rem;
+		}
+	}
+	@include mediaTablet{
+		margin: 4.8rem 0;
+	}
+	&__wrapper{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		@include mediaTablet{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: baseline;
+		}
+	}
+	&__img{
+		max-height: 15rem;
+		margin-bottom: 2.2rem;
+	}
+	&__item{
+		margin: 0 0 4.4rem;
+		@include mediaTablet{
+			margin: 0;
+			padding: 0 2.4rem;
+			width: 33%;
+		}
+	}
+}
+.comofunciona{
+	background-color: #FAFAFB;
+	padding: 2.2rem 0 4.4rem;
+	margin-bottom: 4.4rem;
+	li:nth-last-child(1) {
+		margin: 0;
+	}
+	@include mediaMobile{
+		ul strong{
+			font-size: 1.8rem;
+		}
+	}
+	@include mediaTablet{
+		padding: 4.4rem 2.2rem;
+		margin-top: 4.4rem;
+		li:nth-last-child(2),
+		li:nth-last-child(1){
+			margin: 0;
+		}
+	}
+	&__wrapper{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		@include mediaTablet{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: baseline;
+		}
+	}
+	&__img{
+		max-height: 15rem;
+		margin-bottom: 2.2rem;
+	}
+	&__item{
+		margin: 0 0 4.4rem;
+		@include mediaTablet{
+			margin-bottom: 4.8rem;
+		    padding: 0 2.4rem;
+		    width: 50%;
+		}
+		@include mediaDesktop{
+			width: 25%;
+			margin: 0;
+		}
+	}
+	&__title{
+		padding: 2.2rem 2.2rem;
+		text-align: center;
+		@include mediaTablet{
+		    padding: 0 0 4.8rem;
+			text-align: center;
+		}
+	}
+}
+.eligeycombina{
+	&__title{
+		padding: 0 2.2rem 2.2rem;
+		text-align: center;
+		@include mediaTablet{
+			padding: 2.2rem 0 0;
+		}
+	}
+}

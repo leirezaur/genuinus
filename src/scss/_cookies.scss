@@ -1,0 +1,38 @@
+.cookies{
+    background-color: rgb(182, 182, 182);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    padding-bottom: 8rem;
+	display: none;
+	z-index: 9999;
+}
+.cookies__button{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    margin-left: -7.2rem;
+}
+.cookies__title{
+    margin-bottom: 0.75rem;
+}
+.cookies__close{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+	font-size: 2rem;
+	cursor: pointer;
+}
+.cookies__link, .cookies__link:hover{
+    color: black;
+    font-weight: 700;
+    text-decoration: underline;
+}
+@media only screen and (min-width: 768px){
+	.cookies__button{
+	    margin-left: -8rem;
+	}
+}

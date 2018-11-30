@@ -1,0 +1,29 @@
+/**
+* ICONS
+<a class="icon" href="#">
+	<i class="icon__img fa fa-facebook" aria-hidden="true"></i>
+</a>
+*
+*/
+
+.icon{
+	margin-right: 1rem;
+	cursor: pointer;
+}
+.icon__img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.icon--light .icon__img{
+	background-color: #305f40;
+	color: #fff;
+}
+.icon--dark .icon__img{
+	color: #305f40;
+	background-color: #fff;
+}

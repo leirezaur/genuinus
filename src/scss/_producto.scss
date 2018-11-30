@@ -1,0 +1,181 @@
+.producto{
+    background-color: transparent;
+	padding: 1rem;
+	font-size: 1.4rem;
+	border: 2px solid #f2f2f2;
+	position: relative;
+	width: 100%;
+	&--oferta{
+		border-color: #ffA800;
+	}
+	&--nomargin{
+		margin: 0;
+	}
+	@include mediaTablet{
+		padding: 1rem;
+		font-size: 1.4rem;
+	}
+	&.anim{
+		@include transition(all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+	}
+	&__header{
+	    text-align: center;
+	    position: relative;
+		overflow: hidden;
+		img{
+			width: 60%;
+		    height: auto;
+		    display: block;
+		    margin: 0 auto;
+			@include mediaTablet{
+				width: 70%;
+			}
+			@include mediaDesktopLarge{
+				width: 80%;
+			}
+		}
+	}
+	&__offericon,
+	&__topicon{
+		width: 8.4rem;
+	    height: 8.4rem;
+	    position: absolute;
+	    z-index: 99;
+	    align-self: center;
+	    overflow: hidden;
+		span{
+			position: absolute;
+		    z-index: 9;
+		    top: 0.6rem;
+		    display: block;
+		    text-align: center;
+		    font-weight: bold;
+		    color: #fff;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+		    width: 16rem;
+		    height: 6rem;
+		    background-color: #ffA800;
+		}
+	}
+	&__offericon{
+		top: -1px;
+		right: -1px;
+		span{
+			right: 1rem;
+			font-size: 2.4rem;
+		}
+		&:before{
+			top: -3.5rem;
+			right: -5.5rem;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+	}
+	&__topicon{
+		top: 0;
+		left: 0;
+		span{
+			left: 0.7rem;
+			font-size: 2.2rem;
+		}
+		&:before{
+			top: -3.5rem;
+			left: -5.5rem;
+			-webkit-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+	}
+	&__name{
+	    font-size: inherit;
+	    line-height: inherit;
+	    margin: 0;
+		height: 4.4rem;
+		@include mediaTablet{
+			height: 4.8rem;
+		}
+	}
+	&__info{
+	    position: relative;
+	    padding-top: 1.2rem;
+		font-size: 1.4rem;
+		a{
+			font-weight: 400;
+		}
+		.old{
+			text-decoration: line-through;
+			color: #ffA800;
+		}
+		@include mediaTablet{
+			font-size: 1.4rem;
+		}
+	}
+	&__kilo{
+	    color: rgba(2, 2, 2, 0.6);
+	    font-size: 1.4rem;
+		@media only screen and (max-width: 767px) {
+	        font-size: 1.4rem;
+		}
+	}
+	&__location{
+	    font-style: italic;
+		font-size: 1.2rem;
+	}
+	&__moreinfo{
+	    text-align: center;
+	    cursor: pointer;
+	    position: absolute;
+	    bottom: 0;
+	    width: 100%;
+	    font-size: 1.4rem;
+	    background-color: rgba(242,242,242,0.5);
+	    z-index: 99;
+		padding: 0.2rem;
+		a,
+		a:hover,
+		a:focus,
+		a:active{
+			font-weight: 400;
+		}
+		a .fa{
+			margin-left: 0.5rem;
+			@include transition(all 0.3 cubic-bezier(0.25, 0.46, 0.45, 0.94));
+		}
+		a.active .fa{
+			@include rotate(180deg);
+		}
+	}
+	&__description{
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    padding: 1rem;
+		text-align: left;
+	    background-color: rgba(242, 242, 242, 0.7);
+		border-bottom: 1px solid black;
+		@include transition(all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+		font-size: 1.4rem;
+		@include mediaTablet{
+			font-size: 1.4rem;
+		}
+		&.active{
+			top: 0;
+		}
+	}
+	&__footer{
+		text-align: center;
+	    margin-top: 1rem;
+	}
+	&__button{
+		&,
+		&:nth-last-child(1){
+			margin: 1.1rem 0 0;
+		}
+	}
+}

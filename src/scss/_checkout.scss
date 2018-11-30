@@ -1,0 +1,179 @@
+button.volver{
+	padding: 0;
+    border: none;
+    background-color: inherit;
+    font-size: 2.2rem;
+    line-height: 3.1rem;
+    float: left;
+}
+.checkout{
+	padding-top: 12.1rem;
+	@include mediaTablet{
+		padding-top: 13.2rem;
+	}
+	@include mediaDesktop{
+		max-width: 768px;
+		margin: 0 auto;
+	}
+	&__title, &__detalle{
+		padding: 0 1.5rem;
+		@include mediaTablet{
+			width: 720px;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0;
+		}
+		@include mediaDesktop{
+			width: 1140px;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+	&__button{
+		text-align: center;
+		margin: 2.2rem 0;
+		width: 100%;
+		@include mediaTablet{
+			width: 33%;
+			&--verificado{
+				width: 100%;
+			}
+		}
+	}
+	&__background{
+		background-color: #305F40;
+	    padding: 2.2rem 1.5rem 0;
+		margin-bottom: 2.2rem;
+		@include mediaTablet{
+			padding: 2.4rem 1.5rem;
+		}
+	}
+	&__detalle{
+		@include mediaMobile{
+			padding: 0;
+		}
+		@include mediaTablet{
+			display: flex;
+		    flex-direction: row;
+		    flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 0;
+		}
+		&__datos{
+			@include mediaTablet{
+				width: 100%;
+			}
+		}
+	}
+	&__box{
+		padding: 2.2rem 1.1rem;
+		margin-bottom: 2.2rem;
+		background-color: #FAFAFB;
+		@include mediaTablet{
+			padding: 2.2rem 2.2rem;
+		}
+		a{
+			text-decoration: underline;
+		}
+		&__title{
+			font-family: 'bitter', 'serif';
+			font-size: 1.8rem;
+			@include mediaTablet{
+				padding: 0;
+			}
+		}
+		&__info{
+			margin: 2.2rem;
+		}
+		&__horario{
+			list-style: none;
+		    margin: 1.1rem 0 2.2rem;
+		    padding: 0;
+			@include mediaTablet{
+				margin: 1.1rem 0 0;
+			}
+		}
+		&__item{
+			
+		}
+		&__choice{
+			margin: 2.2rem 0 0;
+		    position: relative;
+			@include mediaTablet{
+				display: flex;
+			    flex-direction: row;
+			    flex-wrap: wrap;
+			    justify-content: space-between;
+			    padding: 0;
+			}
+			span{
+				position: absolute;
+				right: 2.2rem;
+				@include mediaTablet{
+					right: 2.4rem;
+				}
+			}
+			&__info{
+				width: 50%;
+				@include mediaTablet{
+					width: 33%;
+				}
+				p{
+					color: #fff;
+				}
+			}
+		}
+		@include mediaTablet{
+			&__item{
+				position: relative;
+				width: 48%;
+			}
+		}
+	}
+	&__horario{
+		margin: 0;
+	    padding: 0;
+	    border-bottom: 0.1rem solid #979797;
+	    list-style: none;
+		&__item{
+			padding: 1.1rem 2.2rem;
+			position: relative;
+			@include mediaDesktop{
+				padding-left: 2.4rem;
+			}
+			&:nth-child(even){
+				background-color: rgba(206, 210, 219, 0.2);
+			}
+			span{
+				position: absolute;
+				right: 2.2rem;
+				@include mediaTablet{
+					right: 2.4rem;
+				}
+			}
+		}
+	}
+	&__subtotal{
+		margin: 0;
+		padding: 2.2rem 0;
+		border-bottom: 0.1rem solid #979797;
+		list-style: none;
+		&__item{
+			padding: 0 2.2rem;
+			position: relative;
+			span{
+				position: absolute;
+				right: 2.2rem;
+				@include mediaTablet{
+					right: 2.4rem;
+				}
+			}
+		}
+	}
+	&__total{
+		margin: 0;
+		padding: 2.2rem 0 0;
+		list-style: none;
+	}
+}

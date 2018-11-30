@@ -1,0 +1,128 @@
+.hero{
+	text-align: left;
+	width: 100%;
+	padding-top: 10rem;
+	@include mediaTablet{
+		padding-top: 10.8rem;
+	}
+	@include mediaDesktop{
+		padding-top: 9.6rem;
+	}
+	&__overlay{
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.3);
+		z-index: 0;
+	}
+	&__image{
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 35.2rem;
+		@include mediaTablet{
+			height: 36rem;
+		}
+	}
+	&__title{
+		position: absolute;
+	    text-align: center;
+	    top: 33%;
+	    left: 50%;
+	    min-width: 27.2rem;
+		@include translate(-50%, -50%);
+	}
+	&__button{
+		text-align: center;
+		@include mediaTablet{
+			.button{
+				margin: 0 1.2rem;
+			}
+		}
+	}
+	&__wrapper{
+		position: relative;
+	    margin-top: -13.2rem;
+	    background-color: #fff;
+	    padding: 2.2rem;
+	    text-align: center;
+		@include mediaTablet{
+			padding: 2.2rem 4.4rem 0 4.4rem;
+		}
+		@include mediaDesktop{
+			padding: 2.4rem 4.8rem 0 4.8rem;
+			min-height: 14.4rem;
+		}
+		p{
+			margin-bottom: 2.4rem;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		&__contact{
+			text-align: center;
+			a{
+				font-size: 2.6rem;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: bold;
+				color: #305F40;
+			}
+			i{
+				font-size: 4.8rem;
+				color: #305F40;
+			}
+			@include mediaTablet{
+				text-align: left;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-around;
+				align-items: center;
+				width: 40rem;
+				margin: 3rem auto;
+				i{
+					font-size: 6rem;
+					color: #305F40;
+				}
+			}
+			@include mediaDesktop{
+				a{
+					font-size: 3.2rem;
+				}
+				i{
+					font-size: 8rem;
+					color: #305F40;
+				}
+			}
+		}
+		&__info{
+			text-align: center;
+			a,
+			a:hover,
+			a:focus,
+			a:active{
+				color: #305f40;
+			}
+			@include mediaTablet{
+				text-align: left;
+			}
+		}
+	}
+	&__telephone{
+		margin-top: 2.2rem;
+		@include mediaTablet{
+			margin: 2.4rem auto;
+		}
+		p{
+			margin-bottom: 1.1rem;
+			@include mediaTablet{
+				margin-bottom: 1.2rem;
+			}
+			&:nth-last-child(1){
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,96 @@
+.detox{
+	padding: 0 0 4rem;
+	&__hero{
+		background-image: url('../images/detox-hero.jpg');
+		background-position: 100% 15%;
+		@include mediaTablet{
+		background-image: url('../images/detox-hero.jpg');
+		background-position: 100% 15%;
+		}
+		@include mediaMobile{
+		background-position: 20% 15%;
+		}
+	}
+	&__herotitle{
+		text-align: center;
+	}
+	&__proceso{
+		padding-left: 1.4rem;
+		padding-right: 1.4rem;
+		margin-top: 2.2rem;
+		@include mediaTablet{
+			margin-top: 2.4rem;
+		}
+		@include mediaDesktop{
+			padding-left: 17rem;
+			padding-right: 17rem;
+		}
+		&__title{
+			color: #305F40;
+			font-size: 2.6rem;
+			line-height: 3.6rem;
+			margin: 0;
+			text-align: center;
+			@include mediaMobile{
+				margin-bottom: 2.2rem;
+			}
+			@include mediaTablet{
+				margin-bottom: 2.4rem;
+				font-size: 3.2rem;
+			}
+		}
+	}
+	&__content{
+		@include mediaTablet{
+			display: flex;
+			flex-wrap: wrap;
+		    justify-content: space-between;
+		}
+	}
+	&__item{
+		width: 100%;
+		padding-bottom: 2.2rem;
+		@include mediaTablet{
+			width: 48%;
+			padding-bottom: 2.4rem;
+		}
+		@include mediaDesktop{
+			width: 31%;
+		}
+	}
+	&__beneficios{
+		padding-left: 1.4rem;
+		padding-right: 1.4rem;
+		@include mediaDesktop{
+			-moz-column-count: 2;
+			-webkit-column-count: 2;
+			column-count: 2;
+		}
+		&__title{
+			color: #305F40;
+			font-size: 2.6rem;
+			line-height: 3.6rem;
+			margin: 0;
+			padding-bottom: 2.2rem;
+			text-align: center;
+			@include mediaDesktop{
+				font-size: 3.2rem;
+			}
+		}
+		ul {
+		  list-style: none;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		li {
+		  padding-left: 1em;
+		  text-indent: -.7em;
+		}
+
+		li:before {
+		  content: "• ";
+		  color: #7FB069; /* or whatever color you prefer */
+		}
+	}
+}

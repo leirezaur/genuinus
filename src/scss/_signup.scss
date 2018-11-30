@@ -1,0 +1,93 @@
+.signup{
+	padding: 10rem 0 0;
+	&__header{
+		@include mediaMobile{
+			.container{
+				padding: 0;
+			}
+		}
+	}
+	&__forms{
+		@include mediaDesktop{
+			display: flex;
+		}
+	}
+	&__form{
+		display: none;
+		text-align: center;
+		font-size: 1.4rem;
+		max-width: 420px;
+		margin: 0 auto;
+		&.active{
+			display: block;
+		}
+		@include mediaTablet{
+			width: 50%;
+		}
+		@include mediaDesktop{
+			width: 30%;
+			display: block;
+		}
+	}
+	&__content{
+		padding: 2.2rem 0;
+	}
+	&__invite{
+		margin: 4rem 0 0;
+		text-align: center;
+		&__text{
+			display: block;
+			margin-bottom: 2rem;
+			position: relative;
+			span{
+				display: inline-block;
+			    background-color: #fff;
+			    padding: 0 0.6rem;
+			}
+			&:after{
+				content: '';
+			    width: 100%;
+			    height: 1px;
+			    position: absolute;
+			    top: 50%;
+			    left: 0;
+			    background-color: #597E66;
+			    z-index: -1;
+				@include translate(0, -50%);
+			}
+		}
+	}
+}
+.register{
+	&__menu{
+		display: flex;
+		align-items: flex-start;
+		@include mediaTablet{
+			align-items: flex-end;
+			margin: 4rem auto 2rem;
+			width: 70%;
+		}
+		@include mediaDesktop{
+			width: 100%;
+		}
+	}
+	&__tab{
+		width: 50%;
+		text-align: center;
+		font-size: 1.6rem;
+		color: #fff;
+		background-color: rgba(48, 94, 64, 0.8);
+		padding: 1.1rem 0;
+		@include transition(all 0.2s ease-out);
+		&,
+		&:hover,
+		&:active,
+		&:focus{
+			color: #fff;
+		}
+		&.active{
+			background-color: rgba(127, 176, 105, 0.8);
+			padding: 1.7rem 0;
+		}
+	}
+}

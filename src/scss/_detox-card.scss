@@ -1,0 +1,49 @@
+.detox-card{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(242, 242, 242);
+    padding: 2rem;
+	font-size: 1.4rem;
+	@include mediaTablet{
+		font-size: 1.4rem;
+	}
+	&.anim{
+		@include translate(0, 2rem);
+		@include transition(all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+	}
+	&__header{
+		background-image: url("../images/productos/detox-product.png");
+		background-position: center;
+		background-size: cover;
+		box-sizing: border-box;
+	    width: 100%;
+	    height: 20rem;
+	}
+	&__content{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: left;
+		justify-content: space-between;
+		@include mediaMobile{
+			padding-top: 2.2rem;
+			margin-bottom: 1.1rem;
+		}
+        @include mediaTablet{
+            padding-top: 2.4rem;
+			margin-bottom: 1.2rem;
+        }
+	}
+	&__name{
+		color: #305F40;
+		font-size: 2.6rem;
+		line-height: 3.6rem;
+		margin: 0;
+		padding-bottom: 2.2rem;
+	}
+	&__price{
+		font-size: 2rem;
+		font-weight: bold;
+	}
+}

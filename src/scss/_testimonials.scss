@@ -1,0 +1,149 @@
+.testimonials {
+	padding-bottom: 6.6rem;
+	// padding-bottom: 1px;
+    text-align: center;
+	@include mediaTablet{
+		padding-bottom: 7.2rem;
+	}
+	&:focus,
+	&:hover,
+	&:active{
+		outline: none;
+	}
+	&__testimonial{
+	    margin: 2rem 0;
+		width: 100%;
+	}
+	&__header {
+		max-width: 850px;
+		margin: 0 auto;
+		i {
+			color: #7FB069;
+		    font-size: 4rem;
+		}
+	}
+	&__content {
+		font-size: 1.4rem;
+		max-width: 850px;
+		margin: 0 auto;
+	    font-family: 'Bitter', serif;
+	    font-style: italic;
+	    margin: 0 auto;
+	    padding: 2rem 0;
+	    @media only screen and (min-width: 768px) {
+	        padding: 2.4rem 0;
+	    }
+	}
+}
+.testimonials__intro {
+    margin: 0 auto;
+	font-size: 2rem;
+    line-height: 2.8rem;
+    padding: 1rem 0;
+	color: #7FB069;
+    font-weight: bold;
+    @media only screen and (min-width: 768px) {
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 75%;
+    }
+    @media only screen and (min-width: 1024px) {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+}
+
+
+.testimonials__person, .testimonials__thumbnails__person {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 22rem;
+    margin: 0 auto;
+}
+.testimonials__person__image {
+    border-radius: 50%;
+    padding-right: 1rem;
+}
+.testimonials__person__image img {
+    border-radius: 50%;
+    max-width: 60px;
+}
+.testimonials__person__info {
+    text-align: left;
+    padding-left: 1rem;
+}
+.testimonials__person__job,
+.testimonials__person__age {
+    color: rgba(0, 0, 0, 0.46);
+    text-align: left;
+	font-size: 1.2rem;
+}
+
+.testimonials__thumbnails{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+	display: none;
+	margin-bottom: 4.8rem;
+}
+.testimonials__thumbnails__person{
+	cursor: pointer;
+	@include scale(0.8, 0.8);
+	filter: grayscale(100%);
+	&.is-selected{
+		@include scale(1, 1);
+		filter: grayscale(0);
+	}
+	@include transition(all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+}
+
+.flickity-page-dots{
+	margin-top: 0rem;
+	position: relative;
+	bottom: -1rem;
+	@include mediaTablet{
+		bottom: -1rem;
+	}
+	@include mediaDesktop{
+	    position: absolute;
+	    top: 100%;
+		bottom: auto;
+	}
+	.dot{
+		@include transition(all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94));
+		margin: 3px 8px;
+		&.is-selected{
+			width: 16px;
+			height: 16px;
+			margin: 0px 8px;
+			background: #444;
+		}
+	}
+}
+.flickity-prev-next-button{
+	@include mediaMobile{
+		display: none;
+	}
+	@include mediaTablet{
+		&,
+		&:hover {
+			background-color: transparent;
+		}
+		&.next{
+			right: -2rem;
+		}
+		&.previous{
+			left: -2rem;
+		}
+	}
+	@include mediaDesktop{
+		opacity: 0.6;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

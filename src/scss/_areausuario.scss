@@ -1,0 +1,206 @@
+.areausuario{
+    padding-bottom: 20rem;
+    @include mediaTablet{
+        padding: 12rem 0;
+    }
+    &__header{
+        text-align: center;
+        margin: 12rem 0 2.2rem;
+        background-color: #f2f2f2;
+        border: 1px solid #C1C1C1;
+        @include mediaTablet{
+            width: 40%;
+            float: left;
+            margin-top: 0;
+        }
+        @include mediaDesktopLarge{
+            width: 30%;
+        }
+        &__text {
+            & h6{
+                margin: 2rem auto 1rem auto;
+                font-size: 1.4rem;
+                font-family: 'Bitter', serif;
+                font-weight: normal;
+            }
+            & h4{
+                margin: 0 0 2rem;
+                font-size: 2.2rem;
+                @include mediaTablet{
+                    margin-bottom: 10rem;
+                }
+            }
+        }
+        &__salir{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            @include mediaTablet{
+                margin-top: 3rem;
+            }
+        }
+        &__icon{
+            width: 18px;
+            margin-right: 1rem;
+        }
+        &__line{
+            border: 1px solid #7FB069;
+            margin-top: 1.4rem;
+            width: 80%;
+            display: inline-block;
+        }
+    }
+    &__orders{
+        margin-bottom: 4.4rem;
+        @include mediaTablet{
+            margin-top: 4.8rem;
+            text-align: left;
+            margin-bottom: 4.8rem;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include mediaTablet{
+            width: 57%;
+            margin-left: 43%;
+			margin-top: 2.4rem;
+        }
+        @include mediaDesktopLarge{
+            margin-left: 32%;
+            width: 68%;
+        }
+        &__menus{
+            width: 100%;
+            @include mediaDesktop{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        &__image{
+            width: 5rem;
+            margin: 0 1rem 0 3rem;
+            @include mediaTablet{
+                margin-left: 8rem;
+            }
+        }
+        &__title{
+            font-size: 1.8rem;
+            padding: 3rem 0;
+            &--2{
+                padding: 2rem 0;
+                font-size: 1.8rem;
+            }
+        }
+        &__item{
+            display: flex;
+            background-color: #F9F9F9;
+            margin: 1rem 0;
+            border-radius: 15px;
+            align-items: center;
+            & h5{
+                font-weight: normal;
+                font-size: 2rem;
+            }
+            @include mediaDesktop{
+                width: 50%;
+                margin-right: 1rem;
+            }
+        }
+    }
+    &__atencion{
+        text-align: center;
+        @include mediaTablet{
+            width: 57%;
+            margin-left: 43%;
+			margin-bottom: 4.8rem;
+        }
+        @include mediaDesktopLarge{
+            margin-left: 32%;
+            width: 68%;
+        }
+        &__item{
+            position: relative;
+            display: flex;
+            background-color: #F9F9F9;
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 15px;
+            align-items: center;
+            & h5{
+                font-weight: normal;
+                font-size: 2rem;
+                margin: 2rem 0;
+            }
+        }
+        &__image{
+            width: 3.3rem;
+            margin: 0 1.6rem 0 4rem;
+            @include mediaTablet{
+                margin-left: 8rem;
+            }
+        }
+        &__arrow{
+            font-size: 2rem;
+            position: absolute;
+            right: 3rem;
+        }
+    }
+    &__invite{
+        bottom: -20rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        padding: 0 1.5rem;
+        @include mediaTablet{
+            width: 40%;
+            float: left;
+            bottom: 10rem;
+            left: 0;
+            padding: 0 0 0 1.5rem;
+            transform: translate(0,0);
+        }
+        @include mediaDesktop{
+    		top: 33rem;
+        }
+        @include mediaDesktopLarge{
+            width: 30%;
+        }
+        &__text{
+            text-align: center;
+        }
+        &__intro{
+            text-align: center;
+            font-size: 1.6rem;
+            margin: 2rem 0 0;
+        }
+        &__submit{
+            margin: 1rem auto 2.2rem;
+            text-align: center;
+        }
+    }
+	&__orders,
+	&__offer{
+		width: 100%;
+		text-align: center;
+		@include mediaTablet{
+			margin-left: 43%;
+			width: 57%;
+		}
+		@include mediaDesktopLarge{
+			margin-left: 32%;
+			width: 68%;
+		}
+	}
+    &__offer{
+        background-color: #D8D8D8;
+        padding: 6rem 0;
+    }
+}
+.areausuario__atencion__intro, .areausuario__content__intro{
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 1rem 0 2rem;
+}

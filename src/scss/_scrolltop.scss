@@ -1,0 +1,18 @@
+.scrolltop{
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	padding: 0;
+	border-radius: 4px;
+	position: fixed;
+	z-index: 99;
+	bottom: 6rem;
+	right: 2rem;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 4rem;
+	display: none;
+	@include mediaTablet{
+		bottom: 2rem;
+	}
+}

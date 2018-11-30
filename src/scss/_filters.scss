@@ -1,0 +1,47 @@
+.filters{
+	@include mediaDesktop{
+		display: none;
+	}
+	@include mediaTablet{
+		&--reverse{
+			display: flex;
+			flex-direction: row-reverse;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+	}
+	&__search{
+		@include mediaTablet{
+			width: 50%;
+		    margin: 0 auto;
+		}
+	}
+	&__filters{
+		display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    margin: 2.2rem 0;
+		position: relative;
+		font-size: 1.4rem;
+		@include mediaTablet{
+			width: 50%;
+		    margin: 0;
+		    float: right;
+		    margin-top: 2.4rem;
+			.filters--reverse &{
+				float: none;
+			}
+		}
+	}
+	&__results{
+		padding: 2.2rem 0;
+		font-size: 1.4rem;
+		text-align: center;
+		@include mediaTablet{
+			padding: 2.4rem 0;
+			padding-bottom: 0;
+			margin-top: 2.4rem;
+			text-align: left;
+		}
+	}
+}

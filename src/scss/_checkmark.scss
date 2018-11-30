@@ -1,0 +1,75 @@
+/**
+* MARKUP
+*
+<span class="checkmark">
+	<.cross class="checkmark_stem"></.cross>
+	<.cross class="checkmark_kick"></.cross>
+</span>
+<span class="cross">
+	<span class="cross__left"></span>
+	<span class="cross__right"></span>
+</span>
+*
+*/
+
+.checkmark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+}
+.checkmark_stem {
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    background-color: #f8f4e8;
+    left: 12px;
+    top: 4px;
+    border-radius: 2px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkmark_kick {
+    position: absolute;
+    width: 6px;
+    height: 3px;
+    background-color: #f8f4e8;
+    left: 4px;
+    top: 12px;
+    border-radius: 2px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.cross{
+    width: 3.5rem;
+    height: 3.5rem;
+    position:relative;
+    display: inline-block;
+}
+
+.cross__left,.cross__right{
+    content:'';
+    position:absolute;
+    background-color:white;
+    top: 8px;
+    width: 3px;
+    height: 19px;
+    border-radius: 0.2rem;
+}
+
+.cross__left{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+    left: 1.6rem;
+}
+.cross__right{
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+    left: 1.6rem;
+}

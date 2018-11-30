@@ -1,0 +1,103 @@
+.atcliente{
+    position: relative;
+	padding: 12rem 0 4.4rem;
+	@include mediaTablet{
+		padding: 14rem 0 4.8rem;
+	}
+	@include mediaDesktop{
+		max-width: 64rem;
+		margin: 0 auto;
+	}
+    &__header {
+		text-align: center;
+		width: 100%;
+		margin-bottom: 4.4rem;
+		@include mediaTablet{
+			width: 80%;
+			margin: 0 auto 4.8rem;
+		}
+		&__title.title{
+			text-align: center;
+			margin-bottom: 4.4rem;
+			@include mediaTablet{
+				margin-bottom: 2.4rem;
+			}
+		}
+		&__tel{
+			padding: 1.1rem 2.2rem;
+			display: inline-block;
+			font-size: 2.4rem;
+			a,
+			a:hover{
+				color: #305F40;
+			}
+			@include mediaTablet{
+				padding: 1.2rem 2.4rem;
+				max-width: 26rem;
+				margin: 0 auto;
+				border: 0;
+			}
+			@include mediaDesktop{
+				width: 50%;
+				border: 0;
+				padding: 0;
+				margin: 0;
+			}
+		}
+		&__info{
+			position: relative;
+		}
+    }
+	&__accordion{
+		&__item{
+			background-color: #f2f2f2;
+			border-bottom: 1px solid #fff;
+		}
+		&__header{
+			font-size: 1.4rem;
+			padding: 1.1rem 3.3rem 1.1rem 1.1rem;
+		    font-family: 'Bitter', serif;
+		    font-weight: bold;
+		    position: relative;
+			cursor: pointer;
+			@include mediaTablet{
+				padding: 1.2rem 3.6rem 1.2rem 2.4rem;
+			}
+		}
+		&__toggle{
+			position: absolute;
+		    right: 0;
+		    top: 0;
+		    padding: 1.1rem;
+			@include mediaTablet{
+				padding: 1.2rem;
+			}
+			i{
+				font-size: 2.2rem;
+				line-height: 2.2rem;
+				@include transition(all 0.3s ease-out);
+				@include rotate(0deg);
+				.active &{
+					@include rotate(180deg);
+				}
+				@include mediaTablet{
+					line-height: 2.4rem;
+				}
+			}
+		}
+		&__body{
+			font-size: 1.4rem;
+			display: none;
+			background-color: #fff;
+		}
+		&__text{
+			padding: 2.2rem;
+			ol, ul{
+				display: inline-block;
+			}
+			@include mediaTablet{
+				padding: 2.4rem;
+			}
+		}
+	}
+}
